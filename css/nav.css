@@ -1,6 +1,99 @@
 
+nav.nav-bar {
+    display: flex;
+    width: 100%;
+    padding: 9% 5% 0;
+    /* height: 34px; */
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-bar #home {
+    height: 34px;
+}
+
+/* hidden in mobile view */
+.nav-menu {
+    display: none;
+}
+
+#signin {
+    display: none;
+}
+
+/* END hidden */
+
+/* right of nav bar */
+.right-nav {
+    display: flex;
+    min-width: 132px;
+    justify-content: space-between;
+}
+
+/* account button */
+nav .account{
+    color: var(--c6);
+    font-family: mada;
+    font-weight: 500;
+    font-size:15px;
+    line-height: 15px;
+    height: 36px;
+    width: 98px;
+    border: 1px solid var(--c6);
+    border-radius: 13px;
+    margin:auto 14px auto 0 ;
+    display: flex;
+    place-content: center;
+}
+
+nav .account .txt, nav .account svg{
+    max-height: 17px;
+    min-height: 13px;
+    margin: auto 0;
+}
+
+nav .account .txt{
+    margin-left: 5px;
+}
+
+/* sign up */
+.nav-bar #signup {
+    color: var(--c2);
+    background: var(--c4);
+    height: 33px;
+    width: 92px;
+    /*change this in bigger screens*/
+    font-family: mada;
+    font-size: 14px;
+    border-radius: 11px;
+    padding: 8px 24px;
+    margin-top: 1%;
+}
 
 
+/* hamburger menu */
+
+.menu-btn {
+    height: 30px;
+    width: 30px;
+    margin-top: 9px;
+
+}
+
+.line {
+    background-color: #212121;
+    height: 2.8px;
+    width: 30px;
+    border-radius: 2px;
+}
+
+#two {
+    margin: 5.7px auto;
+}
+
+#three {
+    width: 15px;
+}
 
 /* larger screens */
 @media screen and (min-width:370px) {
