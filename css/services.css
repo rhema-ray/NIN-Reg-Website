@@ -1,0 +1,118 @@
+/* base styles (things that won't change) */
+:root {
+    --c1: #F9F9FE;
+    --c2: #FFFFFF;
+    --c3: #007C4B;
+    --c4: #18C17D;
+    --c5: #15AC6F;
+    --c6: #707070e3;
+    --c7: #129461;
+    --c8: #15AC6F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--c1);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+/* base styling end  */
+
+/* sign up  */
+.main {
+    grid-template-rows: repeat(8, 1fr);
+    width: 90%;
+    min-height: 327px;
+    background: var(--c2);
+    height: 81vh;
+    margin: 41px auto 40px;
+    box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
+}
+
+
+
+.main header {
+    text-align: center;
+    margin-bottom: -85px;
+    grid-column: 1/9;
+    grid-row: 1/4;
+    place-self: center;
+}
+
+.main header h1{
+    text-transform: capitalize;
+    color: var(--c4);
+    font-family: airbnb cereal;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    
+}
+.main header h2{
+    font-family: mada;
+    font-weight: 600;
+    margin-top: 7px;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--c6);
+}
+
+
+/* header end*/
+
+
+
+.main .service {
+    font-family: mada;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--c3);
+    background: transparent;
+    width: 295px;
+    height: 48px;
+    border: 1px solid var(--c3);
+    box-shadow: 5px 5px 0  rgba(0, 0, 0, 0.25);
+    grid-column: 1/9;
+    place-self: center;
+    transition: background .3s, color .3s, box-shadow .5s ease-in-out;
+}
+
+.main .service:hover {
+    background: var(--c3);
+    color: var(--c2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.main .service:focus {
+    background: var(--c3);
+    color: var(--c2);
+    box-shadow: inset -4px 4px 20px rgb(0 0 0 / 15%);
+}
+
+
+.one{
+    grid-row: 4/5;
+}
+.two{
+    grid-row: 5/6;
+}
+.three{
+    grid-row: 6/7;
+}
+.four{
+    grid-row: 7/8;
+}
+

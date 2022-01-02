@@ -1,0 +1,117 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+/* footer */
+
+footer {
+    grid-template-rows: repeat(8, minmax(20px, auto));
+    margin-top: 80px;
+    height: 452px;
+    background: var(--c3);
+    box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.20);
+}
+
+.contact-info {
+    grid-column: 1/6;
+    grid-row: 1/4;
+    margin-top: 33px;
+    height: 142px;
+    margin-left: 14px;
+    /* backgrousnd: rgba(0, 0, 255, 0.336); */
+}
+
+.contact-info h3 {
+    color: #f0f0f0a6;
+    font-family: airbnb cereal;
+    padding: .5rem 0 .5rem .25rem;
+    font-size: 17px;
+    font-weight: 600;
+    width: 137px;
+    border-bottom: 1px solid #F0F0F0;
+    text-transform: capitalize;
+}
+
+.contact-info ul {
+    margin-top: 16px;
+}
+
+.contact-info ul li:nth-of-type(1),
+.contact-info ul li:nth-of-type(2) {
+    margin-bottom: 12px;
+}
+
+.contact-info ul li a {
+    font-family: airbnb cereal;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: .7px;
+}
+
+.social-icons {
+    /* grid-column: 1; */
+    margin-left: 14px;
+    grid-row: 6/8;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    height: 110.98px;
+    width: 23px;
+    justify-content: space-between;
+}
+
+.social-icons .icon {
+    display: flex;
+    justify-content: space-around
+}
+
+.footer-nav-menu {
+    grid-column: 4/9;
+    grid-row: 4/8;
+    margin-right: 25px;
+    width: 214px;
+}
+
+.footer-nav-menu h3{
+    color: #f0f0f0a6;
+    font-family: airbnb cereal;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    height: 28px;
+    width: 90px;
+    padding: 0 .7rem 0;
+    text-align: end;
+    margin-left: 124px;
+    border-bottom: 1.6px solid #ffffff;
+}
+
+.footer-nav-menu .footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 194px;
+}
+
+.footer-nav-menu .footer-menu a  {
+    text-align: end;
+    color: #F0F0F0;
+    font-family: airbnb cereal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.footer-note {
+    grid-column: span 8;
+    grid-row: 8;
+    margin: 10px 0;
+    font-size: 12.5px;
+    font-family: roboto;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff94;
+}
+
+/* footer END */

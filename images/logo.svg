@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="34" viewBox="0 0 48 34" class="logo">
+        <g id="home_page_Logo" data-name="home page Logo" transform="translate(-154 -15)">
+          <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(154 15)" fill="none" stroke="#005A36"
+            stroke-width="1">
+            <rect width="48" height="34" stroke="none" />
+            <rect x="0.5" y="0.5" width="47" height="33" fill="none" />
+          </g>
+          <text id="easy" transform="translate(156 29)" fill="#005A36" font-size="13"
+            font-family="AirbnbCerealApp-Book, Airbnb Cereal App">
+            <tspan x="0" y="0">easy</tspan>
+          </text>
+          <text id="NIN" transform="translate(173 42)" fill="#005A36" font-size="13" font-family="Roboto-Medium, Roboto"
+            font-weight="500" letter-spacing="0.061em">
+            <tspan x="0" y="0">NIN</tspan>
+          </text>
+        </g>
+      </svg>

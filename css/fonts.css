@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: airbnb cereal;
-  src: url('../css/airbnb-cereal/AirbnbCerealLight.ttf');
+  src: url('airbnb-cereal/AirbnbCerealLight.ttf');
   font-style: normal;
   font-weight: 300;
 }

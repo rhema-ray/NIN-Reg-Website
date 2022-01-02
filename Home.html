@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
-  <!-- <link rel="stylesheet" href="/css/nav.css"> -->
+  <link rel="stylesheet" href="/css/main-navbar.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
   <title>Welcome to Easy NiN</title>
 </head>
 
@@ -59,14 +61,17 @@
 
     <!-- sign up/ sign in -->
     <div class="right-nav">
-      <a href="signup.html" id="signin">Sign in</a>
-      <a href="signin.html" id="signup">Sign up</a>
+      <a href="login.html" id="signin">Log in</a>
+      <a href="signup.html" id="signup">Sign up</a>
 
       <!-- hamburger menu -->
       <div class="menu-btn">
-        <div class="line" id="one"></div>
-        <div class="line" id="two"></div>
-        <div class="line" id="three"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20">
+          <g id="nav_Menu_btn" data-name="nav Menu btn" transform="translate(5.001)">
+            <path id="Menu" d="M1.428,20a1.429,1.429,0,0,1,0-2.858H14.287a.714.714,0,0,1,.714.715v1.428a.714.714,0,0,1-.714.715Zm0-8.572a1.428,1.428,0,0,1,0-2.857H28.571a1.428,1.428,0,0,1,0,2.857Zm0-8.571A1.429,1.429,0,0,1,1.428,0H28.571a1.429,1.429,0,0,1,0,2.858Z" transform="translate(-5.001)" fill="#212121"/>
+          </g>
+        </svg>
+        
         <!-- <BUtton></BUtton> -->
       </div>
 
@@ -78,7 +83,7 @@
   <section class="section-1">
 
     <div class="main-image">
-      <img src="images/image 3.png" alt="">
+      <img src="images/image1.png" alt="">
     </div>
 
 
@@ -86,10 +91,7 @@
       <h1>NIN PRE-BOOKING AND</h1>
       <h1> APPOINTMENT PORTAL</h1>
 
-      <p class="silde-1">
-        Avoid Long Lines and Apply for Your NIN
-        Directly From Home Today!
-      </p>
+      <p class="silde-1">Avoid the lines and apply for your NIN from the comfort of your own home today!</p>
 
       <p class="slide-2">
         This website is designed exclusively to
@@ -120,14 +122,14 @@
 
   <!-- section 2 -->
   <section class="section-2">
-      <div class="image">
-        <img src="" alt="">
-      </div>
+    <div class="image">
+      <img src="" alt="">
+    </div>
 
-      <div class="text">
-        <h1>Skip A Visit To The Nimc Office</h1>
-        <p>Avoid Long Lines and Apply for Your NIN from the comfort of your phone or pc.</p>
-      </div>
+    <div class="text">
+      <h1>Skip A Visit To The Nimc Office</h1>
+      <p>Avoid Long Lines and Apply for Your NIN from the comfort of your phone or pc.</p>
+    </div>
 
 
   </section>
@@ -137,62 +139,67 @@
     <h1 class="header">our services</h1>
 
 
-      <div class="service i">
-        <button class="service-name">First NIN Registration</button>
+    <div class="service i">
+      <button class="service-name">First NIN Registration</button>
 
-        <p>
-          <span class="green"> Easily apply for a new <b><u>National Identification Number</u> </b> </span>: Register
-          for a National
-          identification number and card for yourself or kids from the comfort of your home.
-        </p>
-      </div>
+      <p>
+        <span class="green"> Easily apply for a new <span
+            style="text-decoration: underline; text-underline-offset: 1px;">National Identification Numb</span> </b>
+        </span>: Register
+        for a National
+        identification number and card for yourself or kids from the comfort of your home.
+      </p>
+    </div>
 
-      <div class="service ii">
-        <button class="service-name">Change Of Name</button>
+    <div class="service ii">
+      <button class="service-name">Change Of Name</button>
 
-        <p><span class="green">Change of your legally recognized name:</span> in case of divorce, marriage, adoption,
-          or
-          self-elected change.</p>
-      </div>
+      <p><span class="green">Change of your legally recognized name:</span> in case of divorce, marriage, adoption,
+        or
+        self-elected change.</p>
+    </div>
 
-        <div class="service iii">
-          <button class="service-name">NIN Card Replacement</button>
-          <p> <span class="green"> Apply for a new nin card:</span> if your card has been lost or stolen, or if you
-            need to update
-            the information on your card.</p>
-        </div>
+    <div class="service iii">
+      <button class="service-name">NIN Card Replacement</button>
+      <p> <span class="green"> Apply for a new nin card:</span> if your card has been lost or stolen, or if you
+        need to update
+        the information on your card.</p>
+    </div>
 
-        <div class="service iv">
-          <button class="service-name">Quick Appointment</button>
+    <div class="service iv">
+      <button class="service-name">Quick Appointment</button>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam sequi. Eum itaque distinctio
-            dolorum saepe dolor excepturi! Molestias, repudiandae.</p>
-        </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam sequi. Eum itaque distinctio
+        dolorum saepe dolor excepturi! Molestias, repudiandae.</p>
+    </div>
   </section>
 
   <!-- section 4 -->
   <section class="section-4">
     <h1 class="header">Register For Your NIN In 3 Easy Steps</h1>
 
-    <div class="steps">
+    <div class="steps grid">
       <div class="step-1">
-        <div class="image"></div>
+        <img src="images/form.png" alt="">
         <p>
-          <span class="green"> You fill out a simple application. </span> <br> We redesigned the NIN form, completely
-          removing all of its ambiguities to make it easier for you understand.
+          <span class="green"> You fill out a simple application: </span> <br> We totally redesigned the NIN form to
+          remove all ambiguities and make it easy to understand.
         </p>
       </div>
 
       <div class="step-2">
-        <div class="image"></div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rerum dicta, eum architecto veritatis
-          nihil soluta fugit voluptate! Amet, quibusdam?</p>
+        <img src="images/mail.png" alt="">
+        <p>
+          <span class="green">We send you an e-mail:</span> <br> If you opt not to submit your BVN or any other form of
+          an identity document, you will receive an email with a ticket confirming your NIN preregistration. This ticket
+          will be required at a Nimc office to register your biometrics.
+        </p>
       </div>
 
       <div class="step-3">
-        <div class="image"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro voluptates iste optio, asperiores
-          officia cupiditate vero iusto praesentium, dolorum nesciunt tempore quia quas illum.</p>
+        <img src="images/id.png" alt="">
+        <p><span class="green">Your NIN and ID Card will be mailed to you:</span> You will receive your new National
+          Identity number and card in the same timeframe as if you had applied in person at the NIMC office.</p>
       </div>
 
     </div>
@@ -200,16 +207,54 @@
 
   <!-- section 5 -->
   <section class="section-5">
-    <h1>Regulated by nimc</h1>
-    <p>You don't have to worry, we collect and store your information securely. With standards approved by <span
-        class="green">NIMC.</span></p>
+    <div class="text">
+      <h1>Regulated by nimc</h1>
+      <p>You don't have to worry, we collect and store your information securely. With standards approved by <span
+          style="color:var(--c4); font-weight: 600;">NIMC</span>.</p>
+    </div>
   </section>
 
 
   <!-- Section 6 -->
   <section class="section-6">
-    <h1>Need any Help? Check Out Our <span class="big">FAQs</span></h1>
+    <h1>Need any Help? Check Out Our <a href="help.html" class="faq">FAQs</a></h1>
+    <img src="" alt="">
   </section>
+
+  <footer class="grid">
+
+    <div class="contact-info">
+      <h3>give us a call</h3>
+
+      <ul>
+        <li><a href="tel:+234-29-7890-2345">+234-29-7890-2345</a></li>
+        <li><a href="tel:+234-00-5610-5672">+234-00-5610-5672</a></li>
+        <li><a href="tel:+234-00-5610-5672">+234-00-5610-5672</a></li>
+      </ul>
+    </div>
+
+    <div class="social-icons">
+      <a href="" class="icon" id="facebook"><img src="images/facebook-f.svg" alt=""></a>
+      <a href="" class="icon" id="twitter"><img src="images/twitter.svg" alt=""></a>
+      <a href="" class="icon" id="medium"><img src="images/medium.svg" alt=""></a>
+    </div>
+
+    <div class="footer-nav-menu">
+
+      <h3>menu</h3>
+
+      <div class="footer-menu">
+        <a href="" class="hidden">home</a>
+        <a href="">help</a>
+        <a href="">about</a>
+        <a href="">contact us</a>
+        <a href="">privacy policy</a>
+        <a href="">Terms And condition</a>
+      </div>
+    </div>
+
+    <h3 class="footer-note"> &copy; 2021 All Rights Reserved. Made by Okeke Rhema </h3>
+  </footer>
 
 </body>
 

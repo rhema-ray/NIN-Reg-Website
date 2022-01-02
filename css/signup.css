@@ -1,0 +1,164 @@
+/* base styles (things that won't change) */
+:root {
+    --c1: #F9F9FE;
+    --c2: #FFFFFF;
+    --c3: #007C4B;
+    --c4: #18C17D;
+    --c5: #15AC6F;
+    --c6: #707070e3;
+    --c7: #129461;
+    --c8: #15AC6F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--c2);
+}
+
+/* base styling end  */
+
+/* sign up section */
+.main {
+    margin: 100px auto;
+    width: 90%;
+    min-height: 327px;
+
+}
+
+.main .header {
+    font-family: airbnb cereal;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: rgba(0, 124, 74, 0.8);
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* input fields */
+form .box {
+    width: 100%;
+    height: 37px;
+    background: transparent;
+    margin-bottom: 34px;
+    position: relative;
+
+}
+
+.pass{
+    height: auto !important;
+    margin-bottom: 20px !important;
+}
+
+input.text-field {
+    height: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: mada;
+    border: 0;
+    border-bottom: 1px solid var(--c3);
+    padding-left: 40px;
+    padding-bottom: 6px;
+    outline: none;
+    transition: border-bottom .3s ease-in-out;
+    /* background-image: url('/images/form.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat; */
+}
+
+::-webkit-input-placeholder {
+    color: #007c4a;
+    transition: opacity .2s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: .5;
+}
+
+input.text-field:focus {
+    color: var(--c4);
+    ;
+    box-shadow: -4px -3px 0px 0px #ffffff, 0px -4px 0px 0px #ffffff, -5px 5px 12px 0px rgb(255 255 255 / 53%), 13px 1px 12px 0px #ffffff, 5px 7px 11px 0px rgb(0 0 0 / 7%);
+    border-bottom: 1px solid var(--c6);
+}
+
+form .box svg {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+form .box input.text-field:focus+svg path {
+    fill: var(--c6);
+}
+
+h2[for=password]{
+    font-family: mada;
+    font-size: 13px;
+    color: var(--c6);
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+
+h2[for=password] .green{
+    color: var(--c5);
+}
+
+
+
+/* continue btn */
+
+form input[type=submit]
+{
+    width: 327px;
+    height: 49px;
+    margin:0 auto;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background:var(--c7);
+    font-family: mada;
+    font-size: 17px ;
+    font-weight:  medium ;
+    color: var(--c2) ;
+    line-height: 12px ;
+}
+
+
+/* login button */
+.section-2 h1 {
+    margin: auto 0;
+    font-size: 19px;
+    font-family: mada;
+    text-align: center;
+    color: var(--c6);
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.big {
+    font-size: 19px;
+    letter-spacing: 1.1px;
+    color: var(--c4);
+    font-family: airbnb cereal;
+    font-weight: 600;
+    width: 94px;
+    padding-bottom: 3px;
+    border-bottom: 1.15px solid #18C17D;
+    box-shadow: -4px -3px 0px 0px #ffffff, 0px -4px 0px 0px #ffffff, -5px 5px 12px 0px rgb(255 255 255 / 53%), 13px 1px 12px 0px #ffffff, 5px 7px 11px 0px rgb(0 0 0 / 7%);
+}
