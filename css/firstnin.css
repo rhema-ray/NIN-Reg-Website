@@ -31,3 +31,15 @@ body {
 
 
 /* base styling end  */
+
+
+/* styling */
+.main {
+    grid-template-rows: repeat(8, 1fr);
+    width: 90%;
+    min-height: 327px;
+    background: var(--c2);
+    height: 81vh;
+    margin: 41px auto 40px;
+    box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
+}
