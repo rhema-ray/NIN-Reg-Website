@@ -1,0 +1,204 @@
+/* base styles (things that won't change) */
+:root {
+    --c1: #F9F9FE;
+    --c2: #FFFFFF;
+    --c3: #007C4B;
+    --c4: #18C17D;
+    --c5: #15AC6F;
+    --c6: #707070e3;
+    --c7: #129461;
+    --c8: #15AC6F;
+}
+
+* {
+    padding: 0 ;
+    margin: 0 ;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--c1);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+/* base styling end  */
+
+
+/* main styling */
+.main {
+    grid-template-rows: repeat(14, 1fr);
+    width: 90%;
+    height: 1320px;
+    /* height: auto; */
+    /* min-height: 327px; */
+    /* max-height: 81vh; */
+    background: var(--c2);
+    margin: 41px auto 40px;
+    box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
+}
+/* header */
+.main header {
+    text-align: center;
+    margin-bottom: -85px;
+    grid-column: 1/9;
+    grid-row: 1/4;
+    place-self: center;
+}
+
+.main header h1{
+    font-family: airbnb cereal;
+    font-size: 34px;
+    color: var(--c4);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.main header h2{
+    font-family: mada;
+    font-size: 14px;
+    color: var(--c6);
+    font-weight: 500;
+    width: 236px;
+    /* text-align: center; */
+    /* text-transform: capitalize; */
+}
+
+
+/* image  and step count*/
+.main .img{
+    grid-column: 1/9;
+    grid-row: 4/6;
+    min-width: 97px;
+    place-self: center;
+    margin-top: 25px;
+    /* position: relative; */
+}
+.image-txt{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .img img{
+    height: 86px;
+    margin: 0  auto;
+}
+
+.main hr{
+    /* grid-column: 6/9;
+    grid-row: 4/6;
+    place-self: center; */
+    height: 2px;
+    width: 135px;
+    border: 0;
+    background: hsla(156, 100%, 24%, 0.45);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    transform: translate(83px, -73px);
+}
+
+.main .img h1{
+    font-family: roboto;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* text feild (form) */
+.main form{
+    grid-column: 1/9;
+    grid-row: 6/14;
+    place-self: center;
+    /* margin-top: -77px; */
+    min-width: 286px;
+}
+.main form input[type=text], select{
+    width: 285px;
+    margin-top:5px;
+    margin-bottom:40px ;
+    height: 48px;
+    font-size: 17px;
+    padding: .5rem 1rem;
+    font-family: roboto;
+    color: var(--c3);
+    outline: none;
+    border: 1px solid var(--c6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    transition: border-color .2s, color .4s, box-shadow .3s ease-in-out;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.main form input[type=text]:focus, select:focus{
+    border-color:#129461;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #707070;
+}
+
+.main form label{
+    font-family:mada ;
+    font-size: 16px;
+    color: #707070;
+    text-transform: capitalize;
+}
+
+
+::-webkit-input-placeholder {
+    color: rgba(112, 112, 112, 0.4);
+    text-transform: capitalize;
+    transition: opacity .2s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: .5;
+}
+/* next button */
+
+.submit{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+#nxt-btn{
+    width: 155px;
+    height: 46px;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--c4);
+    padding-right:35px ;
+    font-family: airbnb cereal;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: .21px;
+    color:var(--c2);
+}
+
+form .submit svg {
+    position: absolute;
+    right: 117px;
+    top: 17px;
+}
+
+form .submit input.text-field:focus+svg path {
+    fill: var(--c6);
+}
+
+
+/* form inputs end */
+

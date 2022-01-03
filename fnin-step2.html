@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/firstnin.css">
+    <link rel="stylesheet" href="css/fnin-step2.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>NIN Registration</title>
+    <title>Step 2 - NIN Registration </title>
 </head>
 
 <body>
@@ -88,52 +88,78 @@
 
     <section class="main grid">
         <header>
-            <h1>Welcome</h1>
-            <h2>Select a service you'd like below.</h2>
+            <h1>About You</h1>
+            <h2>This information will Help us know
+                more about you so we can process your
+                NIN registration much faster.</h2>
         </header>
 
         <div class="img">
+            <hr id="left">
             <div class="image-txt">
-                <img src="images/image2.png" alt="">
-                <h1>Step 1/11</h1>
+                <img src="images/private.png" alt="">
+                <h1>Step 2/11</h1>
             </div>
-            <hr>
+            <hr id="right">
         </div>
-
+        
+        
         <form action="">
             <div class="box one">
-                <label for=""></label>
-                <select name="title" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <label for="title">select title</label>
+                <select name="title" id="" required>
+                    <option value="" disabled selected>Select Title</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Master">Master</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms</option>
+                </select>
+            </div>
+
+            <div class="box one">
+                <label for="marital-status">marital status</label>
+                <select name="marital-status" id="" required>
+                    <option value="" disabled selected style="background-color: transparent;">select your marital status</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Master">Master</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms</option>
                 </select>
             </div>
 
             <div class="box two">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="first-name">first name</label>
+                <input type="text" placeholder="enter your first name" name="first-name" id="" required>
             </div>
 
             <div class="box three">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="surname">surname</label>
+                <input type="text" placeholder="enter your surname" name="surname" id="" required>
             </div>
 
             <div class="box four">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="other">middle name</label>
+                <input type="text" placeholder="enter your middle name" name="" id="" required>
             </div>
 
             <div class="box  five">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="">other name</label>
+                <input type="text" placeholder="enter your other name" name="other" id="" required>
             </div>
 
             <div class="box six">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="maiden-name">maiden name</label>
+                <input type="text" placeholder="enter your maiden name" name="maiden-name" id="" required>
             </div>
+            
+        <div class="submit">
+            <input type="submit" value="next" id="nxt-btn" onclick="window.location.href ='fnin-step2.html'" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <path id="Path_10" data-name="Path 10" d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff"/>
+              </svg>
+        </div>
 
         </form>
     </section>
