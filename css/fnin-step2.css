@@ -33,9 +33,9 @@ body {
 
 /* main styling */
 .main {
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(20, 1fr);
     width: 90%;
-    height: 1320px;
+    height: 2154px;
     /* height: auto; */
     /* min-height: 327px; */
     /* max-height: 81vh; */
@@ -74,7 +74,7 @@ body {
 /* image  and step count*/
 .main .img{
     grid-column: 1/9;
-    grid-row: 4/6;
+    grid-row: 4/5;
     min-width: 97px;
     place-self: center;
     margin-top: 25px;
@@ -125,12 +125,18 @@ body {
 /* text feild (form) */
 .main form{
     grid-column: 1/9;
-    grid-row: 6/14;
+    grid-row: 5/20;
     place-self: center;
-    /* margin-top: -77px; */
+    margin-top: 57px;
     min-width: 286px;
 }
-.main form input[type=text], select{
+
+.main form .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.main form .input-box{
     width: 285px;
     margin-top:5px;
     margin-bottom:40px ;
@@ -145,9 +151,8 @@ body {
     transition: border-color .2s, color .4s, box-shadow .3s ease-in-out;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
+select{
+    color: var(--c6)!important;
 }
 
 .main form input[type=text]:focus, select:focus{
@@ -162,6 +167,10 @@ body {
     color: #707070;
     text-transform: capitalize;
 }
+.v option{
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
 
 
 ::-webkit-input-placeholder {
@@ -173,40 +182,106 @@ body {
 :focus::-webkit-input-placeholder {
     opacity: .5;
 }
-/* next button */
 
-.submit{
+/* name change qestion */
+.main form .name-question h1{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--c7);
+
+}
+.main form .name-question h3{
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b4b4b4;
+}
+
+.main form .name-question .yes{
+    margin-top: 20px;
+}
+
+.main form .name-question .yes input{
+    /* height: 21px; */
+}
+.main form .name-question .yes label,.main form .name-question .no label {
+    font-size: 19px;
+    font-family: mada;
+    font-weight: 600;
+    margin-left: 11px;
+    color: var(--c6);
+}
+.main form .name-question .no{
+    margin-bottom: 48px;
+}
+
+
+
+/* next and prev button */
+
+.btn{
     width: 100%;
     height: auto;
     display: flex;
     position: relative;
 }
 
-#nxt-btn{
+    #nxt-page,#prev-page{
     width: 155px;
     height: 46px;
     margin: auto;
-    border: none;
     border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: var(--c4);
-    padding-right:35px ;
+    box-shadow:2px 3px 0 rgb(0 0 0 / 20%);
     font-family: airbnb cereal;
     font-size: 17px;
     font-weight: 400;
     text-transform: capitalize;
     letter-spacing: .21px;
+    outline: none;
+}
+#nxt-page{
+    padding-right:24px ;
+    border: none;
     color:var(--c2);
+    background-color: var(--c4);
 }
 
-form .submit svg {
+#prev-page{
+    padding-left: 24px ;
+    background: var(--c2);
+    border: 1px solid var(--c6);
+    color: var(--c6);
+    margin-top: 15px;
+    transition: color .3s ease-in-out, backgorund .2s ease-in-out, box-shadow .5s ease-in-out  ;
+}
+
+
+form .btn svg {
     position: absolute;
+}
+
+form .btn.nxt svg{
     right: 117px;
     top: 17px;
 }
 
-form .submit input.text-field:focus+svg path {
-    fill: var(--c6);
+form .btn.prev svg{
+    left: 102px;
+    top: 31px;
+}
+#back-ar path{
+    transition: .3s ease-in-out;
+}
+form .btn #prev-page:hover{
+    color: var(--c2);
+    background: var(--c6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form .btn input#prev-page:hover+svg path {
+    fill: var(--c2);
+
 }
 
 

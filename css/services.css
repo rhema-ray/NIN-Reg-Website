@@ -88,7 +88,7 @@ body {
     box-shadow: 5px 5px 0  rgba(0, 0, 0, 0.25);
     grid-column: 1/9;
     place-self: center;
-    transition: background .3s, color .3s, box-shadow .5s ease-in-out;
+    transition: background .3s ease-in-out, color .3s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 .main .service:hover {
@@ -97,7 +97,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 .main .service:focus {
-    background: var(--c3);
+    /* background: var(--c3); */
+    background: var(--c4);
     color: var(--c2);
     box-shadow: inset -4px 4px 20px rgb(0 0 0 / 15%);
 }
