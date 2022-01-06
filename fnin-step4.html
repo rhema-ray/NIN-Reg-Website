@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fnin-step3.css">
+    <link rel="stylesheet" href="css/fnin-step4.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>Step 3 - NIN Registration </title>
+    <title>Step 4 - NIN Registration </title>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
 
     <section class="main grid">
         <header>
-            <h1>Your Apperance</h1>
+            <h1>Birth info</h1>
             <h2>This information will Help us know
                 more about you so we can process your
                 NIN registration much faster.</h2>
@@ -97,8 +97,8 @@
         <div class="img">
             <hr id="left">
             <div class="image-txt">
-                <img src="images/apperance.png" alt="">
-                <h1>Step 3/11</h1>
+                <img src="images/stroller.png" alt="">
+                <h1>Step 4/11</h1>
             </div>
             <hr id="right">
         </div>
@@ -106,64 +106,48 @@
 
         <form action="">
             <div class="box i">
-                <label for="height">height</label>
-                <input type="number" placeholder="what is your height?" name="height" class="input-box"  min="0.3" max="10" step="0.1" >
-                
+                <label for="dob">date of birth</label>
+                <input type="date" name="dob" id="" min="1850-01-01" placeholder="what is your date of birth?"
+                    title="date of birth" class="input-box">
             </div>
 
             <div class="box ii">
-                <label for="tribal-marks">tribal marks</label>
-                <select name="tribal-marks" title="tribal marks" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">do you have tribal marks?</option>
-                    <option value="yes">yes</option>
-                    <option value="no">no</option>
-                </select>
+                <label for="place-ob-country">place of birth - country</label>
+                <input type="text" name="place-ob-country" placeholder="what country where you born in?"
+                    class="input-box" id="">
             </div>
 
             <div class="box iii">
-                <label for="v-scare">visible scares</label>
-                <select name="v-scare" title="visible scares" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">do you have any visible scare?</option>
-                    <option value="yes">yes</option>
-                    <option value="no">no</option>
-                </select>
+                <label for="place-ob-country">place of birth - state</label>
+                <input type="text" name="place-ob-country" placeholder="what country where you born in?"
+                    class="input-box" id="">
             </div>
 
             <div class="box iv">
-                <label for="h-colour">Hair Colour</label>
-                <input type="text" name="h-colour" placeholder="what is your hair colour?" class="input-box" id="">
-            </div>
-
-
-            <div class="box v">
-                <label for="disability">disabilities</label>
-                <select name="disability" title="disabilities" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">do you have any disability?</option>
-                    <option value="yes">yes</option>
-                    <option value="no">no</option>
-                </select>
-            </div>
-
-            <div class="box vi">
-                <label for="disability-name"> the disability</label>
-                <input type="text" name="disability-name" placeholder="what is the disability?" class="input-box" id="">
+                <label for="place-ob-country">place of birth - LGA/city</label>
+                <input type="text" name="place-ob-country" placeholder="what country where you born in?"
+                    class="input-box" id="">
             </div>
 
 
             <div class="but-nav">
 
                 <div class="btn nxt">
-                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step4.html'">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step5.html'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"
                             d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
                     </svg>
                 </div>
                 <div class="btn prev">
-                    <input type="submit" value="previous" id="prev-page" onclick="window.location.href ='fnin-step2.html'">
-                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                        <path id="Path_10" data-name="Path 10" d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" transform="translate(14 14) rotate(180)" fill="#707070"/>
-                      </svg>
+                    <input type="submit" value="previous" id="prev-page"
+                        onclick="window.location.href ='fnin-step3.html'">
+                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
+                        height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
+                            transform="translate(14 14) rotate(180)" fill="#707070" />
+                    </svg>
                 </div>
             </div>
 
