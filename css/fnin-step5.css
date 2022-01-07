@@ -33,12 +33,9 @@ body {
 
 /* main styling */
 .main {
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(55, 1fr);
     width: 90%;
-    height: 2154px;
-    /* height: auto; */
-    /* min-height: 327px; */
-    /* max-height: 81vh; */
+    min-height: 3700px;
     background: var(--c2);
     margin: 41px auto 40px;
     box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
@@ -66,6 +63,7 @@ body {
     color: var(--c6);
     font-weight: 500;
     width: 236px;
+    margin: 0 auto;
     /* text-align: center; */
     /* text-transform: capitalize; */
 }
@@ -74,7 +72,7 @@ body {
 /* image  and step count*/
 .main .img{
     grid-column: 1/9;
-    grid-row: 4/5;
+    grid-row: 4/7;
     min-width: 97px;
     place-self: center;
     margin-top: 25px;
@@ -122,14 +120,57 @@ body {
 
 
 
-/* text feild (form) */
+/* text feild ( form) */
 .main form{
     grid-column: 1/9;
-    grid-row: 5/20;
+    grid-row: 7/55;
     place-self: center;
     margin-top: 57px;
     min-width: 286px;
 }
+
+/* guardian type question */
+.main form .guard-quest {
+    margin-bottom: 60px;
+}
+
+.main form .guard-quest h1{
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 22px;
+    color: #007c4acc;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.main form .guard-quest label {
+    font-family: mada;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--c6);
+    text-transform: capitalize;
+}
+
+
+.main form .parent-info h1, .main form .guard-info #guardian{
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 50px auto;
+    color: #70707080;
+}
+
+.main form .parent-info h2{
+    font-family: mada;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--c3);
+    margin-bottom: 30px;
+}
+
+/* input elements */
 
 .main form .box {
     display: flex;
@@ -144,16 +185,13 @@ body {
     font-size: 17px;
     padding: .5rem 1rem;
     font-family: roboto;
-    color: var(--c3);
+    color: var(--c7);
     outline: none;
     border: 1px solid var(--c6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
     transition: border-color .2s, color .4s, box-shadow .3s ease-in-out;
 }
 
-select{
-    color: var(--c6)!important;
-}
 
 .main form input[type=text]:focus, select:focus{
     border-color:#129461;
@@ -161,15 +199,11 @@ select{
     color: #707070;
 }
 
-.main form label{
+.main form .box label{
     font-family:mada ;
     font-size: 16px;
     color: #707070;
     text-transform: capitalize;
-}
-.v option{
-    text-transform: uppercase;
-    font-family: sans-serif;
 }
 
 
@@ -182,37 +216,6 @@ select{
 :focus::-webkit-input-placeholder {
     opacity: .5;
 }
-
-/* name change qestion */
-.main form .name-question h1{
-    font-family: roboto;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--c7);
-
-}
-.main form .name-question h3{
-    font-family: lato;
-    font-size: 14px;
-    font-weight: 500;
-    color: #b4b4b4;
-}
-
-.main form .name-question .yes{
-    margin-top: 20px;
-}
-
-.main form .name-question .yes label,.main form .name-question .no label {
-    font-size: 19px;
-    font-family: mada;
-    font-weight: 600;
-    margin-left: 11px;
-    color: var(--c6);
-}
-.main form .name-question .no{
-    margin-bottom: 48px;
-}
-
 
 
 /* next and prev button */

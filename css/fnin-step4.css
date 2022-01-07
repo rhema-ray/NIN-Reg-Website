@@ -35,10 +35,7 @@ body {
 .main {
     grid-template-rows: repeat(20, 1fr);
     width: 90%;
-    height: 1300px;
-    /* height: auto; */
-    /* min-height: 327px; */
-    /* max-height: 81vh; */
+    height: 1000px;
     background: var(--c2);
     margin: 41px auto 40px;
     box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);

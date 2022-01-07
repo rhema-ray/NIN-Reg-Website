@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign-log-nav.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fnin-step5.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
+    <title>Step 5 - NIN Registration </title>
+</head>
+
+<body>
+    <!-- navigation bar-->
+    <nav class="nav-bar">
+        <a href="Home.html" id="home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="34" viewBox="0 0 48 34" class="logo">
+                <g id="home_page_Logo" data-name="home page Logo" transform="translate(-154 -15)">
+                    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(154 15)" fill="none"
+                        stroke="#007c4b" stroke-width="1">
+                        <rect width="48" height="34" stroke="none" />
+                        <rect x="0.5" y="0.5" width="47" height="33" fill="none" />
+                    </g>
+                    <text id="easy" transform="translate(156 29)" fill="#007c4b" font-size="13"
+                        font-family="AirbnbCerealApp-Book, Airbnb Cereal App">
+                        <tspan x="0" y="0">easy</tspan>
+                    </text>
+                    <text id="NIN" transform="translate(173 42)" fill="#007c4b" font-size="13"
+                        font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.061em">
+                        <tspan x="0" y="0">NIN</tspan>
+                    </text>
+                </g>
+            </svg>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="">Help</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+            <!-- more drop down -->
+            <li>
+                <span class="dropbtn">More <span> <svg id="Down_arrow_small_" data-name="Down arrow small  "
+                            xmlns="http://www.w3.org/2000/svg" width="13.055" height="6.528" viewBox="0 0 13.055 6.528">
+                            <path id="Path_36" data-name="Path 36" d="M8.528,9.171,2,3.945H15.055Z"
+                                transform="translate(-2 -2.643)" fill="rgba(0,0,0,0.5)" />
+                            <rect id="Rectangle_1467" data-name="Rectangle 1467" width="3.991" height="3.991"
+                                transform="translate(0.234)" fill="none" />
+                        </svg>
+                    </span>
+                </span>
+                <div class="drop-content">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Conditions</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- account icon and hamburger menu -->
+        <div class="right-nav">
+
+            <span class="account">
+                <svg id="Profile" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                    <path id="Union_1" data-name="Union 1"
+                        d="M0,13V11.375c0-1.788,2.925-3.25,6.5-3.25S13,9.587,13,11.375V13ZM3.25,3.25A3.25,3.25,0,1,1,6.5,6.5,3.25,3.25,0,0,1,3.25,3.25Z"
+                        fill="rgba(112,112,112,0.89)" />
+                </svg> <span class="txt"> Rhema</span>
+            </span>
+            <!-- hamburger menu -->
+            <div class="menu-btn mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20">
+                    <g id="nav_Menu_btn" data-name="nav Menu btn" transform="translate(5.001)">
+                        <path id="Menu"
+                            d="M1.428,20a1.429,1.429,0,0,1,0-2.858H13.572a1.429,1.429,0,0,1,0,2.858Zm0-8.572a1.428,1.428,0,0,1,0-2.857H28.571a1.428,1.428,0,0,1,0,2.857Zm0-8.571A1.429,1.429,0,0,1,1.428,0H28.571a1.429,1.429,0,0,1,0,2.858Z"
+                            transform="translate(-5.001)" fill="#212121" />
+                    </g>
+                </svg>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="main grid">
+        <header>
+            <h1>Birth info</h1>
+            <h2>This information will Help us know
+                more about you so we can process your
+                NIN registration much faster.</h2>
+        </header>
+
+        <div class="img">
+            <hr id="left">
+            <div class="image-txt">
+                <img src="images/family.png" alt="">
+                <h1>Step 5/11</h1>
+            </div>
+            <hr id="right">
+        </div>
+        
+        <form action="">
+
+            <div class="guard-quest">
+                <h1>Select your guardian type</h1>
+                <div class="guardian">
+                    <input type="radio" name="guard-type" value="guardian" id="guardian">
+                    <label for="guardian" id="guard">guardian</label>
+                </div>
+                <div class="parent">
+                    <input type="radio" value="parent" name="guard-type" id="parent">
+                    <label for="parent" id="parnt">parent</label>
+                </div>
+            </div>
+
+            <div class="guard-info">
+                <h1 id="guardian">guardian's info</h1>
+               
+                <div class="box i">
+                    <label for="guard-first-name">first name</label>
+                    <input type="text" placeholder="guardian's first name" name="guard-first-name" id="" class="input-box" required>
+                </div>
+    
+                <div class="box ii">
+                    <label for="guard-surname">surname</label>
+                    <input type="text" placeholder="guardian's surname" name="guard-surname" id="" class="input-box" required>
+                </div>
+    
+                <div class="box iii">
+                    <label for="guard-middle">middle name</label>
+                    <input type="text" placeholder="guardian's middle name" name="guard-middle" id="" class="input-box" required>
+                </div>
+    
+                <div class="box iv">
+                    <label for="guard-phone-num">phone number</label>
+                    <input type="tel" placeholder="guardian's phone number" name="guard-phone-num" class="input-box" maxlength="11" required pattern="[0-9]" inputmode="numeric">
+                </div>
+    
+                <div class="box v">
+                    <label for="guard-cor">country of residence</label>
+                    <input type="text" name="guard-cor" placeholder="guardian's country of residence" class="input-box" required>
+                </div>
+    
+                <div class="box iv">
+                    <label for="guard-nin">NIN number</label>
+                    <input type="text" name="guard-nin" placeholder="what country where you born in?" class="input-box"
+                        required>
+                </div>
+            </div>
+
+            <div class="parent-info">
+                <h1>parent's info</h1>
+                <div class="father">
+                    <h2>father</h2>
+                    <div class="box f-i">
+                        <label for="fath-first-name">first name</label>
+                        <input type="text" placeholder="father's first name" name="fath-first-name" id="" class="input-box" required>
+                    </div>
+
+                    <div class="box f-ii">
+                        <label for="fath-surname">surname</label>
+                        <input type="text" placeholder="father's surname" name="fath-surname" id="" class="input-box" required>
+                    </div>
+        
+                    <div class="box f-iii">
+                        <label for="fath-middle">middle name</label>
+                        <input type="text" placeholder="father's middle name" name="fath-middle" id="" class="input-box" required>
+                    </div>
+
+                    <div class="box f-iv">
+                        <label for="fath-phone-num">phone number</label>
+                        <input type="tel" placeholder="father's phone number" name="fath-phone-num" class="input-box" maxlength="11" required pattern="[0-9]" inputmode="numeric">
+                    </div>
+
+                    <div class="box f-v">
+                        <label for="fath-nin">NIN number</label>
+                        <input type="text" name="fath-nin" placeholder="father's NIN" class="input-box" required>
+                    </div>
+
+                    <div class="box f-vi">
+                        <label for="fath-place-oo-country">place of origin - country</label>
+                        <input type="text" name="fath-place-oo-country" placeholder="father's country of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box f-vii">
+                        <label for="fath-place-oo-state">place of origin - state</label>
+                        <input type="text" name="fath-place-oo-state" placeholder="father's state of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box f-viii">
+                        <label for="fath-place-oo-lga">place of origin - LGA/city</label>
+                        <input type="text" name="fath-place-oo-lga" placeholder="father's LGA/city of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box f-ix">
+                        <label for="place-oo-lga">place of origin - town</label>
+                        <input type="text" name="place-oo-lga" placeholder="fathers town of origin?" class="input-box" required>
+                    </div>
+
+                    <div class="box f-x">
+                        <label for="place-oo-lga">country of residence</label>
+                        <input type="text" name="place-oo-lga" placeholder="father's country of residence?" class="input-box" required>
+                    </div>
+        
+                </div>
+
+                <div class="mother">
+                    <h2>mother</h2>
+                    <div class="box m-i">
+                        <label for="mom-first-name">first name</label>
+                        <input type="text" placeholder="mother's first name" name="mom-first-name" id="" class="input-box" required>
+                    </div>
+
+                    <div class="box m-ii">
+                        <label for="mom-surname">surname</label>
+                        <input type="text" placeholder="mother's surname" name="mom-surname" id="" class="input-box" required>
+                    </div>
+        
+                    <div class="box m-iii">
+                        <label for="mom-middle">middle name</label>
+                        <input type="text" placeholder="mother's middle name" name="mom-middle" id="" class="input-box" required>
+                    </div>
+
+                    <div class="box m-iv">
+                        <label for="mom-phone-num">phone number</label>
+                        <input type="tel" placeholder="mother's phone number" name="mom-phone-num" class="input-box" maxlength="11" required pattern="[0-9]" inputmode="numeric">
+                    </div>
+
+                    <div class="box m-v">
+                        <label for="mom-nin">NIN number</label>
+                        <input type="text" name="mom-nin" placeholder="mother's NIN" class="input-box" required>
+                    </div>
+
+                    <div class="box m-vi">
+                        <label for="mom-place-oo-country">place of origin - country</label>
+                        <input type="text" name="mom-place-oo-country" placeholder="mother's country of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box m-vii">
+                        <label for="mom-place-oo-state">place of origin - state</label>
+                        <input type="text" name="mom-place-oo-state" placeholder="mother's state of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box m-viii">
+                        <label for="mom-place-oo-lga">place of origin - LGA/city</label>
+                        <input type="text" name="mom-place-oo-lga" placeholder="mother's LGA/city of origin" class="input-box" required>
+                    </div>
+        
+                    <div class="box m-ix">
+                        <label for="place-oo-lga">place of origin - town</label>
+                        <input type="text" name="place-oo-lga" placeholder="mothers town of origin?" class="input-box" required>
+                    </div>
+
+                    <div class="box m-x">
+                        <label for="place-oo-lga">country of residence</label>
+                        <input type="text" name="place-oo-lga" placeholder="mother's country of residence?" class="input-box" required>
+                    </div>
+        
+                </div>
+
+            </div>
+
+
+            <div class="but-nav">
+
+                <div class="btn nxt">
+                    <input type="submit" value="next" id="nxt-page"
+                        onclick="window.location.href ='fnin-step6.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
+                    </svg>
+                </div>
+                <div class="btn prev">
+                    <input type="submit" value="previous" id="prev-page"
+                        onclick="window.location.href ='fnin-step4.html'">
+                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
+                        height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
+                            transform="translate(14 14) rotate(180)" fill="#707070" />
+                    </svg>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <footer class="grid">
+
+        <div class="contact-info">
+            <h3>give us a call</h3>
+
+            <ul>
+                <li><a href="tel:+234-29-7890-2345">+234-29-7890-2345</a></li>
+                <li><a href="tel:+234-00-5610-5672">+234-00-5610-5672</a></li>
+                <li><a href="tel:+234-00-5610-5672">+234-00-5610-5672</a></li>
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <a href="" class="icon" id="facebook"><img src="images/facebook-f.svg" alt=""></a>
+            <a href="" class="icon" id="twitter"><img src="images/twitter.svg" alt=""></a>
+            <a href="" class="icon" id="medium"><img src="images/medium.svg" alt=""></a>
+        </div>
+
+        <div class="footer-nav-menu">
+
+            <h3>menu</h3>
+
+            <div class="footer-menu">
+                <a href="">home</a>
+                <a href="">help</a>
+                <a href="">about</a>
+                <a href="">contact us</a>
+                <a href="">privacy policy</a>
+                <a href="">Terms And condition</a>
+            </div>
+        </div>
+
+        <h3 class="footer-note"> &copy; 2021 All Rights Reserved. Made by Okeke Rhema </h3>
+    </footer>
+</body>
+
+</html>
