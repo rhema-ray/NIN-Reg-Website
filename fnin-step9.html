@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fnin-step2.css">
+    <link rel="stylesheet" href="css/fnin-step8.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>Step 2 - NIN Registration </title>
+    <title>Step 8 - NIN Registration </title>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
 
     <section class="main grid">
         <header>
-            <h1>Personal Info</h1>
+            <h1>supporting <span>documents</span></h1>
             <h2>This information will Help us know
                 more about you so we can process your
                 NIN registration much faster.</h2>
@@ -97,139 +97,112 @@
         <div class="img">
             <hr id="left">
             <div class="image-txt">
-                <img src="images/private.png" alt="">
-                <h1>Step 2/11</h1>
+                <img src="images/id-mini.png" alt="">
+                <h1>Step 8/11</h1>
             </div>
             <hr id="right">
         </div>
 
-
         <form action="">
+
+            <h1 id="nxt-sup-doc">1<sup>st</sup> supporting document </h1>
+
             <div class="box i">
-                <label for="gender">gender</label>
-                <select name="gender" title="gender" class="input-box" required>
-                    <option value="" disabled selected>Select gender</option>
-                    <option value="male">male</option>
-                    <option value="female">female</option>
+                <label for="doc-type1">select document type</label>
+                <select name="doc-type1" title="select document type" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> select a document type</option>
+                    <option value="any identity reference">any identity reference</option>
+                    <option value="immigration document">immigration document</option>
+                    <option value="natioanl insurance">natioanl insurance</option>
+                    <option value="drivers licence">drivers licence</option>
+                    <option value="nigerian passport">nigerian passport</option>
+                    <option value="other designated document">other designated document</option>
                 </select>
             </div>
 
             <div class="box ii">
-                <label for="marital-status">marital status</label>
-                <select name="marital-status" title="marital status" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">select a marital status
-                    </option>
-                    <option value="married">married</option>
-                    <option value="divorced">divorced</option>
-                    <option value="seperated">seperated</option>
-                    <option value="single">single</option>
-                    <option value="widowed">widowed</option>
-                </select>
+                <label for="doc-num">document number</label>
+                <input type="text" placeholder="what is the document number?" name="doc-num"  class="input-box" required>
             </div>
 
             <div class="box iii">
-                <label for="phone-num">phone number</label>
-                <input type="tel" placeholder="enter your phone number" name="phone-num" class="input-box"
-                    maxlength="11" required pattern="[0-9]" inputmode="numeric">
-
+                <label for="expiry-date">document expiry date</label>
+                <input type="date" placeholder="what state do you live in?"  min="2005-01-01" name="expiry-date"  class="input-box" required>
             </div>
 
+            <button class="rmv-doc" id="rmv-doc1">remove document</button>
+
+            <h1 id="nxt-sup-doc">2<sup>nd</sup> supporting document </h1>
+            
             <div class="box iv">
-                <label for="email">email</label>
-                <input type="text" placeholder="enter your email" name="first-name" class="input-box" required>
+                <label for="doc-type1">select document type</label>
+                <select name="doc-type1" title="select document type" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> select a document type</option>
+                    <option value="any identity reference">any identity reference</option>
+                    <option value="immigration document">immigration document</option>
+                    <option value="natioanl insurance">natioanl insurance</option>
+                    <option value="drivers licence">drivers licence</option>
+                    <option value="nigerian passport">nigerian passport</option>
+                    <option value="other designated document">other designated document</option>
+                </select>
             </div>
-
-
+            
             <div class="box v">
-                <label for="religon">religon</label>
-                <select name="religon" title="religon" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">what is your religon?
-                    </option>
-                    <option value="christianity">christianity</option>
-                    <option value="islam">islam</option>
-                    <option value="traditional">traditional</option>
-                    <option value="others">others</option>
-                </select>
+                 <label for="doc-num">document number</label>
+                <input type="text" placeholder="what is the document number?" name="doc-num"  class="input-box" required>
             </div>
-
+            
             <div class="box vi">
-                <label for="employment-stat">employment status</label>
-                <select name="employment-stat" title="employment status" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;"> Are you employed?
-                    </option>
-                    <option value="employed">employed</option>
-                    <option value="unemployed">unemployed</option>
-                    <option value="pensioner">pensioner</option>
-                    <option value="self employed">self employed</option>
-                </select>
+                <label for="expiry-date">document expiry date</label>
+                <input type="date" placeholder="what state do you live in?"  min="2005-01-01" name="expiry-date"  class="input-box" required>
             </div>
-
+            
+            <button class="rmv-doc" id="rmv-doc2">remove document</button>
+            <h1 id="nxt-sup-doc">3<sup>rd</sup> supporting document </h1>
+            
+            
             <div class="box vii">
-                <label for="current-ocu">current occupation</label>
-                <input type="text" placeholder="what's your current occupation?" name="current-ocu" class="input-box" required>
+                <label for="doc-type1">select document type</label>
+                <select name="doc-type1" title="select document type" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> select a document type</option>
+                    <option value="any identity reference">any identity reference</option>
+                    <option value="immigration document">immigration document</option>
+                    <option value="natioanl insurance">natioanl insurance</option>
+                    <option value="drivers licence">drivers licence</option>
+                    <option value="nigerian passport">nigerian passport</option>
+                    <option value="other designated document">other designated document</option>
+                </select>
             </div>
             
             <div class="box viii">
-                <label for="mom-phone-num">occupation's phone number</label>
-                <input type="tel" placeholder="office phone number" name="mom-phone-num" class="input-box" maxlength="11" required pattern="[0-9]" inputmode="numeric">
+                <label for="doc-num">document number</label>
+                <input type="text" placeholder="what is the document number?" name="doc-num"  class="input-box" required>
             </div>
-
-            <div class="name-question">
-                <h1>Have you changed your name before?</h1>
-                <h3>Did you have a different name at birth?</h3>
-                <!--lato-->
-               <div class="yes">
-                   <input type="radio" name="answer" value="yes" id="yes">
-                   <label for="yes">yes</label>
-               </div>
-
-               <div class="no">
-                   <input type="radio" value="no" name="answer" id="no">
-                   <label for="no">no</label>
-               </div>
-            </div>
-                
+            
             <div class="box ix">
-                <label for="Prev-first-name">Previous first name</label>
-                <input type="text" placeholder="what was your first name" name="Prev-first-name" class="input-box"
-                    required>
-
+                <label for="expiry-date">document expiry date</label>
+                <input type="date" placeholder="what state do you live in?"  min="2005-01-01" name="expiry-date"  class="input-box" required>
             </div>
-
-            <div class="box x">
-                <label for="Prev-sur-name">Previous surname name</label>
-                <input type="text" placeholder="what was your surname name" name="Prev-sur-name" class="input-box"
-                    required>
-
-            </div>
-
-            <div class="box xi">
-                <label for="Prev-mid-name">Previous middle name</label>
-                <input type="text" placeholder="what was your middle name" name="Prev-mid-name" class="input-box"
-                    required>
-
-            </div>
-
-            <div class="box xii">
-                <label for="Prev-othr-name">Previous other name</label>
-                <input type="text" placeholder="what was your other name" name="Prev-othr-name" class="input-box">
-
-            </div>
-
+            <button class="rmv-doc" id="rmv-doc3">remove document</button>
+            
             <div class="but-nav">
 
                 <div class="btn nxt">
-                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step3.html'">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step9.html'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"
                             d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
                     </svg>
                 </div>
                 <div class="btn prev">
-                    <input type="submit" value="previous" id="prev-page" onclick="window.location.href ='fnin-step1.html'">
-                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                        <path id="Path_10" data-name="Path 10" d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" transform="translate(14 14) rotate(180)" fill="#707070"/>
-                      </svg>
+                    <input type="submit" value="previous" id="prev-page"
+                        onclick="window.location.href ='fnin-step7.html'">
+                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
+                        height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
+                            transform="translate(14 14) rotate(180)" fill="#707070" />
+                    </svg>
                 </div>
             </div>
 

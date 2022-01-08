@@ -88,7 +88,7 @@
 
     <section class="main grid">
         <header>
-            <h1>Birth info</h1>
+            <h1>Education Info</h1>
             <h2>This information will Help us know
                 more about you so we can process your
                 NIN registration much faster.</h2>
@@ -107,46 +107,44 @@
 
 
             <div class="box i">
-                <label for="guard-first-name">first name</label>
-                <input type="text" placeholder="guardian's first name" name="guard-first-name" id="" class="input-box"
-                    required>
+                <label for="edu-level">education level</label>
+                <select name="edu-level" title="marital status" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> your Education level</option>
+                    <option value="none`">none</option>
+                    <option value="certification">certification</option>
+                    <option value="post-graduate">post-graduate</option>
+                    <option value="primary">primary</option>
+                    <option value="secondary">secondary</option>
+                    <option value="tertiary">tertiary</option>
+                </select>
             </div>
 
             <div class="box ii">
-                <label for="guard-surname">surname</label>
-                <input type="text" placeholder="guardian's surname" name="guard-surname" id="" class="input-box"
+                <label for="native-lang">native language</label>
+                <input type="text" placeholder="guardian's surname" name="native-lang" id="" class="input-box"
                     required>
             </div>
 
             <div class="box iii">
-                <label for="guard-middle">middle name</label>
-                <input type="text" placeholder="guardian's middle name" name="guard-middle" id="" class="input-box"
-                    required>
+                <label for="lang-spoken">main language spoken</label>
+                <input type="text" placeholder="guardian's middle name" name="lang-spoken"  class="input-box" required>
             </div>
 
             <div class="box iv">
-                <label for="guard-phone-num">phone number</label>
-                <input type="tel" placeholder="guardian's phone number" name="guard-phone-num" class="input-box"
-                    maxlength="11" required pattern="[0-9]" inputmode="numeric">
+                <label for="othr-lang-spoken">other language<span style="text-transform: lowercase;">(s)</span> spoken</label>
+                <textarea name="othr-lang-spoken"  class="input-box"  placeholder="other languages you speak" ></textarea>
             </div>
 
             <div class="box v">
-                <label for="guard-cor">country of residence</label>
-                <input type="text" name="guard-cor" placeholder="guardian's country of residence" class="input-box"
-                    required>
-            </div>
-
-            <div class="box iv">
-                <label for="guard-nin">NIN number</label>
-                <input type="text" name="guard-nin" placeholder="what country where you born in?" class="input-box"
-                    required>
+                <label for="lang-rw"> language<span style="text-transform: lowercase;">(s)</span> you read and write</label>
+                <textarea  placeholder="languages you read and write" name="lang-rw"  class="input-box" required></textarea>
             </div>
 
 
             <div class="but-nav">
 
                 <div class="btn nxt">
-                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step6.html'">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step7.html'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"
                             d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
@@ -154,7 +152,7 @@
                 </div>
                 <div class="btn prev">
                     <input type="submit" value="previous" id="prev-page"
-                        onclick="window.location.href ='fnin-step4.html'">
+                        onclick="window.location.href ='fnin-step5.html'">
                     <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
                         height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"

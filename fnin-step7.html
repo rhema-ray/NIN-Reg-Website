@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fnin-step2.css">
+    <link rel="stylesheet" href="css/fnin-step7.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>Step 2 - NIN Registration </title>
+    <title>Step 7 - NIN Registration </title>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
 
     <section class="main grid">
         <header>
-            <h1>Personal Info</h1>
+            <h1>address Info</h1>
             <h2>This information will Help us know
                 more about you so we can process your
                 NIN registration much faster.</h2>
@@ -97,139 +97,69 @@
         <div class="img">
             <hr id="left">
             <div class="image-txt">
-                <img src="images/private.png" alt="">
-                <h1>Step 2/11</h1>
+                <img src="images/map.png" alt="">
+                <h1>Step 7/11</h1>
             </div>
             <hr id="right">
         </div>
 
-
         <form action="">
+
+
             <div class="box i">
-                <label for="gender">gender</label>
-                <select name="gender" title="gender" class="input-box" required>
-                    <option value="" disabled selected>Select gender</option>
-                    <option value="male">male</option>
-                    <option value="female">female</option>
+                <label for="resid-nat">residency nature</label>
+                <select name="resid-nat" title="residency nature" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> your residency nature</option>
+                    <option value="birth">birth</option>
+                    <option value="naturalization">naturalization</option>
+                    <option value="registration">registration</option>
                 </select>
             </div>
 
             <div class="box ii">
-                <label for="marital-status">marital status</label>
-                <select name="marital-status" title="marital status" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">select a marital status
-                    </option>
-                    <option value="married">married</option>
-                    <option value="divorced">divorced</option>
-                    <option value="seperated">seperated</option>
-                    <option value="single">single</option>
-                    <option value="widowed">widowed</option>
-                </select>
+                <label for="cntry-or">country of residence</label>
+                <input type="text" placeholder="what country do you live in?" name="cntry-or"  class="input-box" required>
             </div>
 
             <div class="box iii">
-                <label for="phone-num">phone number</label>
-                <input type="tel" placeholder="enter your phone number" name="phone-num" class="input-box"
-                    maxlength="11" required pattern="[0-9]" inputmode="numeric">
-
+                <label for="cntry-or-state">state of residence </label>
+                <input type="text" placeholder="what state do you live in?" name="cntry-or-state"  class="input-box" required>
             </div>
 
             <div class="box iv">
-                <label for="email">email</label>
-                <input type="text" placeholder="enter your email" name="first-name" class="input-box" required>
+                <label for="cntry-or-lga">LGA/city of residence</label>
+                <input type="text" placeholder="what LGA/city do you live in?" name="cntry-or-lga"  class="input-box" required>
             </div>
 
-
             <div class="box v">
-                <label for="religon">religon</label>
-                <select name="religon" title="religon" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;">what is your religon?
-                    </option>
-                    <option value="christianity">christianity</option>
-                    <option value="islam">islam</option>
-                    <option value="traditional">traditional</option>
-                    <option value="others">others</option>
-                </select>
+                <label for="address"> address</label>
+                <textarea  placeholder="your address" name="address"  class="input-box" required></textarea>
             </div>
 
             <div class="box vi">
-                <label for="employment-stat">employment status</label>
-                <select name="employment-stat" title="employment status" class="input-box" required>
-                    <option value="" disabled selected style="background-color: transparent;"> Are you employed?
-                    </option>
-                    <option value="employed">employed</option>
-                    <option value="unemployed">unemployed</option>
-                    <option value="pensioner">pensioner</option>
-                    <option value="self employed">self employed</option>
-                </select>
+                <label for="post-code">Postal code</label>
+                <input type="text" placeholder="what is your postal code?" name="post-code"  class="input-box" required>
             </div>
 
-            <div class="box vii">
-                <label for="current-ocu">current occupation</label>
-                <input type="text" placeholder="what's your current occupation?" name="current-ocu" class="input-box" required>
-            </div>
-            
-            <div class="box viii">
-                <label for="mom-phone-num">occupation's phone number</label>
-                <input type="tel" placeholder="office phone number" name="mom-phone-num" class="input-box" maxlength="11" required pattern="[0-9]" inputmode="numeric">
-            </div>
-
-            <div class="name-question">
-                <h1>Have you changed your name before?</h1>
-                <h3>Did you have a different name at birth?</h3>
-                <!--lato-->
-               <div class="yes">
-                   <input type="radio" name="answer" value="yes" id="yes">
-                   <label for="yes">yes</label>
-               </div>
-
-               <div class="no">
-                   <input type="radio" value="no" name="answer" id="no">
-                   <label for="no">no</label>
-               </div>
-            </div>
-                
-            <div class="box ix">
-                <label for="Prev-first-name">Previous first name</label>
-                <input type="text" placeholder="what was your first name" name="Prev-first-name" class="input-box"
-                    required>
-
-            </div>
-
-            <div class="box x">
-                <label for="Prev-sur-name">Previous surname name</label>
-                <input type="text" placeholder="what was your surname name" name="Prev-sur-name" class="input-box"
-                    required>
-
-            </div>
-
-            <div class="box xi">
-                <label for="Prev-mid-name">Previous middle name</label>
-                <input type="text" placeholder="what was your middle name" name="Prev-mid-name" class="input-box"
-                    required>
-
-            </div>
-
-            <div class="box xii">
-                <label for="Prev-othr-name">Previous other name</label>
-                <input type="text" placeholder="what was your other name" name="Prev-othr-name" class="input-box">
-
-            </div>
 
             <div class="but-nav">
 
                 <div class="btn nxt">
-                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step3.html'">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step8.html'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"
                             d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
                     </svg>
                 </div>
                 <div class="btn prev">
-                    <input type="submit" value="previous" id="prev-page" onclick="window.location.href ='fnin-step1.html'">
-                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                        <path id="Path_10" data-name="Path 10" d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" transform="translate(14 14) rotate(180)" fill="#707070"/>
-                      </svg>
+                    <input type="submit" value="previous" id="prev-page"
+                        onclick="window.location.href ='fnin-step6.html'">
+                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
+                        height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
+                            transform="translate(14 14) rotate(180)" fill="#707070" />
+                    </svg>
                 </div>
             </div>
 
