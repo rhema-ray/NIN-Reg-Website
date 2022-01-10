@@ -40,10 +40,11 @@ nav .account{
     height: 36px;
     width: 98px;
     border: 1px solid var(--c6);
-    border-radius: 13px;
+    border-radius: 14px;
     margin:auto 14px auto 0 ;
     display: flex;
     place-content: center;
+    opacity: .6;
 }
 
 nav .account .txt, nav .account svg{
