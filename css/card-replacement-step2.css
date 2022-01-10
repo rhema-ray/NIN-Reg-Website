@@ -35,9 +35,9 @@ body {
 .main {
     grid-template-rows: repeat(20, 1fr);
     width: 90%;
-    height: 1350px;
+    height: 1070px;
     background: var(--c2);
-    margin: 75px auto 40px;
+    margin: 41px auto 40px;
     box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
 }
 /* header */
@@ -56,7 +56,6 @@ body {
     font-weight: 600;
     text-transform: capitalize;
     line-height: 40px;
-    margin-bottom:10px ;
 }
 
 .main header h1 span{
@@ -94,6 +93,15 @@ body {
     margin: 0  auto;
 }
 
+.main hr#left{
+    height: 2px;
+    width: 130px;
+    border: 0;
+    background: hsla(156, 100%, 24%, 0.45);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    transform: translate(-121px, 40px);
+}
 
 .main hr#right{
     /* grid-column: 6/9;
@@ -113,13 +121,12 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 
 /* text feild ( form) */
 .main form{
     grid-column: 1/9;
-    grid-row: 6/40;
+    grid-row: 6/20;
     place-self: center;
     margin-top: 57px;
     min-width: 286px;
@@ -145,9 +152,10 @@ body {
     border: 1px solid var(--c6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
     transition: border-color .2s, color .4s, box-shadow .3s ease-in-out;
+    resize: none;
 }
 
-.main form .input-box:focus, select:focus,textarea:focus{
+.main form .input-box:focus, select:focus{
     border-color:#129461;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #707070;
@@ -170,26 +178,22 @@ body {
     opacity: .5;
 }
 
-textarea{
-    resize: none;
-    height: 90px;
-    font-size: 17px;
-    padding: .5rem 1rem;
+/* next supporting document */
+#nxt-sup-doc{
     font-family: roboto;
-    color: var(--c7);
-    outline: none;
-    border: 1px solid var(--c6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
-    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 50px 0;
+    color: #70707080;
 }
 
-textarea::-webkit-input-placeholder{
-    text-transform: none;
-}
 /* next and prev button */
-
+.but-nav{
+    margin-top: 20px;
+}
 .btn{
-    margin-top: 50px;
     width: 100%;
     height: auto;
     display: flex;

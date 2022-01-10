@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sign-log-nav.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/quick-mail.css">
+    <link rel="stylesheet" href="css/card-replacement.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>You're appointment was successful </title>
+    <title>card replacement</title>
 </head>
 
 <body>
@@ -88,27 +87,116 @@
 
     <section class="main grid">
         <header>
-            <h1>You've Got Maill</h1>
-            <h2>Congratulations! You've successfully scheduled a meeting with a NIMC official.</h2>
+            <h1>abut you</h1>
+            <h2>This information will assist us in understanding more about you so that we can process your Natioanl ID
+                card replacement.</h2>
         </header>
 
         <div class="img">
-            <hr id="left">
             <div class="image-txt">
-                <img src="images/sign.png" alt="">
+                <img src="images/image2.png" alt="">
+                <h1>Step 1/3</h1>
             </div>
+            <hr id="right">
         </div>
 
-      <div class="txt">
-          <h1>Your request was successful</h1>
-          <p>Your request to schedule an appointment with a NIMC operative was successful!</p>
-          <p>
-            More information regarding your 
-            appointment schedule and receipt can be found in 
-            your email.</p>
-      </div>
+        <form action="">
+            <div class="box i">
+                <label for="title">select title</label>
+                <select name="title" id="" class="input-box" required>
+                    <option value="" disabled selected>Select Title</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Master">Master</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms</option>
+                </select>
+            </div>
 
-      <a href="Home.html" target="_parent" rel="no"  class="btn">go home </a>
+            <div class="box ii">
+                <label for="first-name">first name</label>
+                <input type="text" placeholder="enter your first name" name="first-name" class="input-box" id="" required>
+            </div>
+
+            <div class="box iii">
+                <label for="surname">surname</label>
+                <input type="text" placeholder="enter your surname" name="surname" class="input-box" id="" required>
+            </div>
+
+            <div class="box iv">
+                <label for="middle">middle name</label>
+                <input type="text" placeholder="enter your middle name" name="middle"class="input-box" id="" required>
+            </div>
+
+            <div class="box  vi">
+                <label for="nin">NIN number</label>
+                <input type="text" name="nin" placeholder="what country where you born in?" class="input-box" required>
+            </div>
+
+            <div class="box vii">
+                <label for="gender">gender</label>
+                <select name="gender" title="gender" class="input-box" required>
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+
+            <div class="box vii">
+                <label for="gender">gender</label>
+                <select name="gender" title="gender" class="input-box" required>
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+
+            <div class="name-question">
+                <h1>Was your name different on your previous card?</h1>
+                <div class="yes">
+                    <input type="radio" name="answer" value="yes" id="yes">
+                    <label for="yes">yes</label>
+                </div>
+
+                <div class="no">
+                    <input type="radio" value="no" name="answer" id="no">
+                    <label for="no">no</label>
+                </div>
+            </div>
+
+
+            <div class="box viii">
+                <label for="Prev-first-name">Previous first name</label>
+                <input type="text" placeholder="what was your first name" name="Prev-first-name" class="input-box"
+                    required>
+
+            </div>
+
+            <div class="box ix">
+                <label for="Prev-sur-name">Previous surname name</label>
+                <input type="text" placeholder="what was your surname name" name="Prev-sur-name" class="input-box"
+                    required>
+
+            </div>
+
+            <div class="box x">
+                <label for="Prev-mid-name">Previous middle name</label>
+                <input type="text" placeholder="what was your middle name" name="Prev-mid-name" class="input-box"
+                    required>
+
+            </div>
+
+            <div class="but-nav">
+
+                <div class="btn nxt">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='card-replacement-step2.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
+                    </svg>
+                </div>
+            </div>
+        </form>
     </section>
 
     <footer class="grid">

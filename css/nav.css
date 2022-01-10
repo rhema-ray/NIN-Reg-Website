@@ -45,6 +45,7 @@ nav .account{
     display: flex;
     place-content: center;
     opacity: .6;
+    user-select: none;
 }
 
 nav .account .txt, nav .account svg{

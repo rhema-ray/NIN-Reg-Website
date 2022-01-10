@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sign-log-nav.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/quick-mail.css">
+    <link rel="stylesheet" href="css/change-name.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>You're appointment was successful </title>
+    <title>Change of Name</title>
 </head>
 
 <body>
@@ -88,27 +87,59 @@
 
     <section class="main grid">
         <header>
-            <h1>You've Got Maill</h1>
-            <h2>Congratulations! You've successfully scheduled a meeting with a NIMC official.</h2>
+            <h1>supporting <span>documents</span></h1>
+            <h2>This information will assist us in understanding more about you so that we can process your nin change of name.</h2>
         </header>
 
         <div class="img">
-            <hr id="left">
             <div class="image-txt">
-                <img src="images/sign.png" alt="">
+                <img src="images/id-mini.png" alt="">
+                <h1>Step 1/2</h1>
             </div>
+            <hr id="right">
         </div>
 
-      <div class="txt">
-          <h1>Your request was successful</h1>
-          <p>Your request to schedule an appointment with a NIMC operative was successful!</p>
-          <p>
-            More information regarding your 
-            appointment schedule and receipt can be found in 
-            your email.</p>
-      </div>
+        <form action="">
 
-      <a href="Home.html" target="_parent" rel="no"  class="btn">go home </a>
+            <div class="box i">
+                <label for="doc-type1">select document type</label>
+                <select name="doc-type1" title="select document type" class="input-box" required>
+                    <option value="" disabled selected style="background-color: transparent;"> select a document type</option>
+                    <option value="any identity reference">court affidavit</option>
+                    <option value="immigration document">marriage certificate</option>
+                    <option value="natioanl insurance">birth certificate</option>
+                    <option value="drivers licence">divorce papers</option>
+                    <option value="nigerian passport">nigerian passport</option>
+                    <option value="other designated document">other designated document</option>
+                </select>
+            </div>
+
+            <div class="box ii">
+                <label for="doc-num">document number</label>
+                <input type="text" placeholder="what is the document number?" name="doc-num"  class="input-box" required>
+            </div>
+
+            <div class="box iii">
+                <label for="expiry-date">document expiry date</label>
+                <input type="date" placeholder="what state do you live in?"  min="2005-01-01" name="expiry-date"  class="input-box" required>
+            </div>
+
+            <button class="rmv-doc" id="rmv-doc1">remove document</button>
+
+           
+            <div class="but-nav">
+
+                <div class="btn nxt">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='change-name-step2.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
+                    </svg>
+                </div>
+                
+            </div>
+
+        </form>
     </section>
 
     <footer class="grid">
