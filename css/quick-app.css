@@ -35,9 +35,9 @@ body {
 .main {
     grid-template-rows: repeat(20, 1fr);
     width: 90%;
-    height: 1200px;
+    height: 1350px;
     background: var(--c2);
-    margin: 41px auto 40px;
+    margin: 75px auto 40px;
     box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
 }
 /* header */
@@ -56,6 +56,7 @@ body {
     font-weight: 600;
     text-transform: capitalize;
     line-height: 40px;
+    margin-bottom:10px ;
 }
 
 .main header h1 span{
@@ -77,7 +78,7 @@ body {
 /* image  and step count*/
 .main .img{
     grid-column: 1/9;
-    grid-row: 4/7;
+    grid-row: 5/7;
     min-width: 97px;
     place-self: center;
     margin-top: 25px;
@@ -121,6 +122,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 /* text feild ( form) */
@@ -152,10 +154,9 @@ body {
     border: 1px solid var(--c6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
     transition: border-color .2s, color .4s, box-shadow .3s ease-in-out;
-    resize: none;
 }
 
-.main form .input-box:focus, select:focus{
+.main form .input-box:focus, select:focus,textarea:focus{
     border-color:#129461;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #707070;
@@ -178,20 +179,26 @@ body {
     opacity: .5;
 }
 
-/* next supporting document */
-#nxt-sup-doc{
+textarea{
+    resize: none;
+    height: 90px;
+    font-size: 17px;
+    padding: .5rem 1rem;
     font-family: roboto;
-    font-size: 25px;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 50px 0;
-    color: #70707080;
+    color: var(--c7);
+    outline: none;
+    border: 1px solid var(--c6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    margin-top: 5px;
 }
 
+textarea::-webkit-input-placeholder{
+    text-transform: none;
+}
 /* next and prev button */
 
 .btn{
+    margin-top: 50px;
     width: 100%;
     height: auto;
     display: flex;

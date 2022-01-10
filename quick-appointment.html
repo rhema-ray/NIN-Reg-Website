@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fnin-step9.css">
+    <link rel="stylesheet" href="css/quick-app.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>Step 9 - NIN Registration </title>
+    <title>Quick Appointment </title>
 </head>
 
 <body>
@@ -88,17 +88,15 @@
 
     <section class="main grid">
         <header>
-            <h1>appointment <span>booking</span></h1>
-            <h2>This information will Help us know
-                more about you so we can process your
-                NIN registration much faster.</h2>
+            <h1>quick <span>appointment</span></h1>
+            <h2>This information will be used to schedule an appointment with a NIMC official for you.</h2>
         </header>
 
         <div class="img">
             <hr id="left">
             <div class="image-txt">
                 <img src="images/time.png" alt="">
-                <h1>Step 9/11</h1>
+                <h1>Step 1</h1>
             </div>
             <hr id="right">
         </div>
@@ -130,7 +128,12 @@
                 <label for="branch">select branch</label>
                 <input list="branch" name="s-branch" placeholder="select a branch" class="input-box" required>
                 <datalist id="branch">
-                    
+                    <option value="lagos">
+                    <option value="abuja">
+                    <option value="anambra">
+                    <option value="adamawa">
+                    <option value="abia">
+                    <option value="enugu">
                 </datalist>
             </div>
 
@@ -146,27 +149,23 @@
                  <label for="time">select time</label>
                 <input type="time"  name="time" min="08-00-00" class="input-box" required>
             </div>
+
+
+            <div class="box v">
+                 <label for="res-app">your reason for an appointment</label>
+                 <textarea name="res-app" placeholder="Your reason for the appointment. This will not affect your appointment scheduling." id=""></textarea>
+            </div>
+
+
             
-            <div class="but-nav">
 
                 <div class="btn nxt">
-                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='fnin-step10.html'">
+                    <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='quick-mail.html'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <path id="Path_10" data-name="Path 10"
                             d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
                     </svg>
                 </div>
-                <div class="btn prev">
-                    <input type="submit" value="previous" id="prev-page"
-                        onclick="window.location.href ='fnin-step7.html'">
-                    <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
-                        height="14" viewBox="0 0 14 14">
-                        <path id="Path_10" data-name="Path 10"
-                            d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
-                            transform="translate(14 14) rotate(180)" fill="#707070" />
-                    </svg>
-                </div>
-            </div>
 
         </form>
     </section>
