@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/change-name-step2.css">
+    <link rel="stylesheet" href="css/help.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.svg">
-    <title>Step 2 - Change of Name </title>
+
+    <title>Need Help?</title>
 </head>
 
 <body>
-    <!-- navigation bar-->
     <nav class="nav-bar">
         <a href="Home.html" id="home">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="34" viewBox="0 0 48 34" class="logo">
@@ -43,15 +43,15 @@
             <li><a href="">Contact us</a></li>
             <!-- more drop down -->
             <li>
-                <span class="dropbtn">More <span> <svg id="Down_arrow_small_" data-name="Down arrow small  "
+                <div class="dropbtn">More <div> <svg id="Down_arrow_small_" data-name="Down arrow small  "
                             xmlns="http://www.w3.org/2000/svg" width="13.055" height="6.528" viewBox="0 0 13.055 6.528">
                             <path id="Path_36" data-name="Path 36" d="M8.528,9.171,2,3.945H15.055Z"
                                 transform="translate(-2 -2.643)" fill="rgba(0,0,0,0.5)" />
                             <rect id="Rectangle_1467" data-name="Rectangle 1467" width="3.991" height="3.991"
                                 transform="translate(0.234)" fill="none" />
                         </svg>
-                    </span>
-                </span>
+                    </div>
+                </div>
                 <div class="drop-content">
                     <a href="">Privacy Policy</a>
                     <a href="">Terms and Conditions</a>
@@ -86,88 +86,112 @@
 
     </nav>
 
-    <section class="main grid">
-        <header>
-            <h1>About You</h1>
-            <h2>This information will Help us know
-                more about you so we can process your
-                NIN registration much faster.</h2>
-        </header>
+    <!-- first section -->
 
-        <div class="img">
-            <hr id="left">
-            <div class="image-txt">
-                <img src="images/image2.png" alt="">
-                <h1>Step 2</h1>
-            </div>
-            <hr id="right">
-
+    <section class="one grid">
+        <h1>here to help.</h1>
+        <img src="images/question.png" alt="">
+        <div class="txt">
+            <p>This website is designed exclusively to make your National Identification Registration and Modification
+                stress free.</p>
+            <p>
+                If you have any questions or concerns before or after you place an order with us you can check the <a href="#faq">FAQ</a> 
+                section below.</p>
         </div>
-        
-        
-        <form action="">
-            <div class="box one">
-                <label for="title">select title</label>
-                <select name="title" id="" required>
-                    <option value="" disabled selected>Select Title</option>
-                    <option value="Mr">Mr</option>
-                    <option value="Mrs">Mrs</option>
-                    <option value="Master">Master</option>
-                    <option value="Miss">Miss</option>
-                    <option value="Ms">Ms</option>
-                </select>
-            </div>
-
-            <div class="box two">
-                <label for="first-name">first name</label>
-                <input type="text" placeholder="enter your first name" name="first-name" id="" required>
-            </div>
-
-            <div class="box three">
-                <label for="surname">surname</label>
-                <input type="text" placeholder="enter your surname" name="surname" id="" required>
-            </div>
-
-            <div class="box four">
-                <label for="other">middle name</label>
-                <input type="text" placeholder="enter your middle name" name="" id="" required>
-            </div>
-
-            <div class="box  five">
-                <label for="">other name</label>
-                <input type="text" placeholder="enter your other name" name="other" id="" required>
-            </div>
-
-            <div class="box six">
-                <label for="maiden-name">maiden name</label>
-                <input type="text" placeholder="enter your maiden name" name="maiden-name" id="" required>
-            </div>
-
-
-        <div class="but-nav">
-
-            <div class="btn nxt">
-                <input type="submit" value="next" id="nxt-page" onclick="window.location.href ='change-name-confirmed.html'">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                    <path id="Path_10" data-name="Path 10"
-                        d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z" fill="#fff" />
-                </svg>
-            </div>
-            <div class="btn prev">
-                <input type="submit" value="previous" id="prev-page"
-                    onclick="window.location.href ='change-name.html'">
-                <svg id="back-ar" data-name="Backward arrow" xmlns="http://www.w3.org/2000/svg" width="14"
-                    height="14" viewBox="0 0 14 14">
-                    <path id="Path_10" data-name="Path 10"
-                        d="M7,0,5.727,1.273l4.818,4.818H0V7.909H10.545L5.727,12.727,7,14l7-7Z"
-                        transform="translate(14 14) rotate(180)" fill="#707070" />
-                </svg>
-            </div>
-        </div>
-
-        </form>
     </section>
 
+
+    <!-- second section -->
+    <section class="two grid">
+        <header>
+            <h1 id="faq">FAQs</h1>
+            <h3>Frequently Asked questions</h3>
+        </header>
+        <div class="drop-down">
+            <div class="pr">
+                <button class="accordion"> Who are we?</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis consequatur fugit minima distinctio, laborum id. Optio fuga, aperiam, libero molestias repudiandae rerum amet dignissimos excepturi harum quasi praesentium magni?</p>
+                </div>
+            </div>
+
+            <div class="pr">
+                <button class="accordion">Is there a charge for the 
+                    service? </button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsum id, quod maiores debitis perferendis voluptatibus culpa, porro explicabo quibusdam cum repellendus ad cumque!</p>
+                </div>
+            </div>
+            
+            <div class="pr">
+                <button class="accordion"> What documents are 
+                    required?</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati quaerat ducimus nihil voluptas dolorum quod nesciunt, possimus eos non corporis, vitae ab consequatur repellat aliquid quae.</p>
+                </div>
+            </div>
+
+            <div class="pr">
+                <button class="accordion">why do we collect BVN or 
+                    any personal identification 
+                    information? </button>
+                <div class="panel">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda dignissimos unde hic voluptates doloribus itaque eveniet obcaecati suscipit quo.</p>
+                </div>
+            </div>
+
+            <div class="pr">
+                <button class="accordion"> Do I need to fill everything? </button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia aliquid odio enim ducimus incidunt error ea tempore ipsum, ullam labore atque non veniam inventore?</p>
+                </div>
+            </div>
+
+            <div class="pr">
+                <button class="accordion">Is my information 
+                    secured? </button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed deserunt natus incidunt quidem architecto mollitia nulla nesciunt velit aliquam quod?</p>
+                </div>
+            </div>
+            <div class="pr">
+                <button class="accordion"> How long until I receive 
+                    my card?</button>
+                <div class="panel">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab veritatis expedita delectus suscipit harum, saepe porro reiciendis quo!</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+        
+    </section>
+
+
+    <!-- 3rd section -->
+
+    <section class="three">
+        <h1>Got Any Questions?<a href="contactus.html">Contact Us</a></h1>
+    </section>
+
+
+    <!-- footer     -->
     <footer class="grid">
 
         <div class="contact-info">
@@ -202,6 +226,7 @@
 
         <h3 class="footer-note"> &copy; 2021 All Rights Reserved. Made by Okeke Rhema </h3>
     </footer>
+
 </body>
 
 </html>

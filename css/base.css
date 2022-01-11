@@ -1,0 +1,40 @@
+:root {
+    --c1: #F9F9FE;
+    --c2: #FFFFFF;
+    --c3: #007C4B;
+    --c4: #18C17D;
+    --c5: #15AC6F;
+    --c6: #707070e3;
+    --c7: #129461;
+    --c8: #15AC6F;
+    --c9: rgba(0, 124, 74, 0.8);
+    --c10: #707070;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--c1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+@media screen and (max-width:425) {
+    .hidden {
+        display: none;
+    }
+
+}
