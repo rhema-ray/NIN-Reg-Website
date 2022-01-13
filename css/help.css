@@ -160,6 +160,20 @@ section.two header h3{
 
   /* section 3 */
   section.three h1{
-      text-align: center;
-      font-size: ;
+    font-family: mada;
+    text-align: center;
+      font-weight: 600;
+      line-height: 29px;
+      font-size: 27px;
+      color: var(--c6);
+      letter-spacing: 0.06em;
+      font-size: 27px;
+  }
+
+  section.three h1 a{
+    font-family: airbnb cereal;
+    font-size:32px ;
+    font-weight: 600;
+    color: var(--c4);
+    border-bottom: 1px solid var(--c4);
   }
