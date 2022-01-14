@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="css/home.css" as="style">
+  <link rel="preload" href="css/nav.css" as="style">
+  <link rel="preload" href="css/base.css" as="style">
+  <link rel="preload" href="css/footer.css" as="style">
+  <link rel="preload" href="css/fonts.css" as="style">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
-  <link rel="stylesheet" href="css/main-navbar.css">
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -53,7 +57,7 @@
             </svg>
           </span>
         </span>
-        <div class="drop-content">
+        <div class="dropdown">
           <a href="">Privacy Policy</a>
           <a href="">Terms and Conditions</a>
         </div>
@@ -69,10 +73,12 @@
       <div class="menu-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20">
           <g id="nav_Menu_btn" data-name="nav Menu btn" transform="translate(5.001)">
-            <path id="Menu" d="M1.428,20a1.429,1.429,0,0,1,0-2.858H14.287a.714.714,0,0,1,.714.715v1.428a.714.714,0,0,1-.714.715Zm0-8.572a1.428,1.428,0,0,1,0-2.857H28.571a1.428,1.428,0,0,1,0,2.857Zm0-8.571A1.429,1.429,0,0,1,1.428,0H28.571a1.429,1.429,0,0,1,0,2.858Z" transform="translate(-5.001)" fill="#212121"/>
+            <path id="Menu"
+              d="M1.428,20a1.429,1.429,0,0,1,0-2.858H14.287a.714.714,0,0,1,.714.715v1.428a.714.714,0,0,1-.714.715Zm0-8.572a1.428,1.428,0,0,1,0-2.857H28.571a1.428,1.428,0,0,1,0,2.857Zm0-8.571A1.429,1.429,0,0,1,1.428,0H28.571a1.429,1.429,0,0,1,0,2.858Z"
+              transform="translate(-5.001)" fill="#212121" />
           </g>
         </svg>
-        
+
         <!-- <BUtton></BUtton> -->
       </div>
 
@@ -81,40 +87,15 @@
   </nav>
 
   <!-- section 1 -->
-  <section class="section-1">
+  <section class="section-1 grid">
 
-    <div class="main-image">
-      <img src="images/image1.png" alt="">
-    </div>
+    <img src="images/image1.png" class="main-image" alt="">
 
-
-    <div class="text">
-      <h1>NIN PRE-BOOKING AND</h1>
-      <h1> APPOINTMENT PORTAL</h1>
-
+    <header>
+      <h1>NIN PRE-ENROLMENT AND <span>APPOINTMENT PORTAL</span></h1>
       <p class="silde-1">Avoid the lines and apply for your NIN from the comfort of your own home today!</p>
+    </header>
 
-      <p class="slide-2">
-        This website is designed exclusively to
-        make your National Identification
-        Registration and Modification
-        stress free.
-      </p>
-
-      <!-- dot boxes -->
-      <div class="dot-box">
-
-        <span class="parent-dot">
-          <div class="dot"></div>
-        </span>
-
-        <span class="parent-dot">
-          <div class="dot"></div>
-        </span>
-
-      </div>
-
-    </div>
 
     <button class="get-started" onclick="window.location.href ='signup.html'">Get Started</button>
 
@@ -136,7 +117,7 @@
   </section>
 
   <!-- section 3 -->
-  <section class="section-3">
+  <section class="section-3 grid">
     <h1 class="header">our services</h1>
 
 
@@ -145,7 +126,7 @@
 
       <p>
         <span class="green"> Easily apply for a new <span
-            style="text-decoration: underline; text-underline-offset: 1px;">National Identification Numb</span> </b>
+            style="text-decoration: underline; text-underline-offset: 1px;">National Identification Number</span> </b>
         </span>: Register
         for a National
         identification number and card for yourself or kids from the comfort of your home.
@@ -176,11 +157,12 @@
   </section>
 
   <!-- section 4 -->
-  <section class="section-4">
+  <section class="section-4 grid">
     <h1 class="header">Register For Your NIN In 3 Easy Steps</h1>
 
-    <div class="steps grid">
-      <div class="step-1">
+    <div class="step-parent">
+
+      <div class="step i">
         <img src="images/form.png" alt="">
         <p>
           <span class="green"> You fill out a simple application: </span> <br> We totally redesigned the NIN form to
@@ -188,7 +170,7 @@
         </p>
       </div>
 
-      <div class="step-2">
+      <div class="step ii">
         <img src="images/mail.png" alt="">
         <p>
           <span class="green">We send you an e-mail:</span> <br> If you opt not to submit your BVN or any other form of
@@ -197,13 +179,13 @@
         </p>
       </div>
 
-      <div class="step-3">
+      <div class="step iii">
         <img src="images/id.png" alt="">
         <p><span class="green">Your NIN and ID Card will be mailed to you:</span> You will receive your new National
           Identity number and card in the same timeframe as if you had applied in person at the NIMC office.</p>
       </div>
-
     </div>
+
   </section>
 
   <!-- section 5 -->

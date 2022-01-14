@@ -115,3 +115,15 @@ footer {
 }
 
 /* footer END */
+
+
+@media screen and (min-width:370px) {
+
+    .footer-nav-menu {
+        grid-column: 4/9;
+        justify-self: end;
+        grid-row: 4/8;
+        margin-right: 25px;
+        width: 214px;
+    }
+}

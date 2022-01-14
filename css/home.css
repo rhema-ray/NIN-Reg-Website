@@ -1,118 +1,69 @@
 
-
-/* Navigation bar mobile */
-nav.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    width: 322px;
-    /* width: 86vw; */
-    margin: 7% auto 10% auto;
-}
-
-.nav-bar #home {
-    height: 34px;
-    margin-top: 3px;
-}
-
-/* hidden in mobile view */
-.nav-menu {
-    display: none;
-}
-
-#signin {
-    display: none;
-}
-
-/* END hidden */
-
-.right-nav {
-    display: flex;
-    min-width: 132px;
-    justify-content: space-between;
-}
-
-.nav-bar #signup {
-    color: var(--c2);
-    background: var(--c4);
-    height: 33px;
-    width: 92px;
-    /*change this in bigger screens*/
-    font-family: mada;
-    font-size: 14px;
-    border-radius: 11px;
-    padding: 8px 24px;
-    margin-top: 1%;
-}
-
-
-/* hamburger menu */
-.menu-btn {
-    max-height: 20px;
-    max-width: 30px;
-    /* margin-left: 2px; */
-    margin-top: 9px;
-}
-
-.menu-btn .line {
-    height: 2.8px;
-    width: 30px;
-    background-color: #212121;
-    border-radius: 50px;
-}
-
-.menu-btn .line#two {
-    margin: 5.7px 0;
-}
-
-#three {
-    width: 15px;
-}
-
-/* END */
-
 /* section 1 */
-section.section-1 {
-    display: grid;
+
+
+.section-1 {
+    grid-template-rows: repeat(10, 1fr);
+    /* width: 321px; */
+    /* height: 658px; */
     background: var(--c2);
-    max-width: 86%;
-    height: 81vh;
     margin: 0 auto 40px;
     box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.10);
+    width: clamp(300px,86%,90vw);
+    height: clamp(600px, 81vh, 90vh);
 }
 
 /* home image */
-section.section-1 img {
-    height: auto;
-    width: 100%;
+.section-1 .main-image {
+    grid-row: 2/7;
+    grid-column: 1/9;
+    width:278px ;
+    /* height: 281.09px; */
+    place-self: center;
+}
+
+/* header */
+.section-1 header{
+    grid-row: 7/9;
+    grid-column: 1/9;
+    /* width: 298px; */
+    place-self: center;
+    margin-top: 25px;
+}
+
+.section-1 header h1 {
+    color: var(--c8);
+    font-family: airbnb cereal;
+    font-size: 23px;
+    width: 319px;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.031em;
+    text-align: center;
+}
+
+.section-1 header h1 span{
+    font-size: 25px;
 }
 
 /* Home text */
 
-section.section-1 .text h1 {
-    color: var(--c8);
-    font-family: airbnb cereal;
-    font-size: 25px;
-    font-weight: 600;
-    align-self: center;
-    text-align: center;
-}
-
-section.section-1 .text h1:nth-child(2) {
-    font-size: 1.5625em;
-}
-
-section.section-1 .text p {
+.section-1 header p {
     font-size: 13px;
     font-family: mada;
     width: 235px;
     /* max-width: 300px; */
     text-align: center;
     color: var(--c6);
-    margin: 5px auto 10px auto;
-
+    margin: 10px auto 10px;
 }
 
-section.section-1 button.get-started {
+/* button */
+.section-1 button.get-started {
+    grid-column: 1/9;
+    grid-row: 9/11;
+    place-self: center;
     height: 46px;
     width: 155px;
     border: 2px solid rgba(0, 124, 74, 0.8);
@@ -120,42 +71,40 @@ section.section-1 button.get-started {
     color: rgba(0, 124, 74, 0.8);
     background: #fff;
     border-radius: 24px;
-    margin: auto auto auto auto;
+    margin-bottom: 10px;
 }
-
-
-
 /* END */
+
 
 /* section 2 */
 .section-2 .image img {
     display: none;
 }
 
-section.section-2 {
+.section-2 {
     margin: 100px auto;
-    display: grid;
-    max-width: 278px;
+    width: 278px;
     place-items: center;
 }
 
-section.section-2 .text h1 {
+.section-2 .text h1 {
     font-family: roboto;
     font-size: 27px;
     font-weight: 700;
     color: var(--c5);
-    width: 234px;
+    width: clamp(234px,86%,90vw);
     margin: 0 auto;
     text-align: center;
 }
 
-section.section-2 .text p {
+.section-2 .text p {
     font-family: mada;
     font-size: 14px;
     font-weight: 500;
     color: var(--c6);
     text-align: center;
     width: 278px;
+    margin-top: 5px;
 }
 
 /* section 2 END */
@@ -163,21 +112,20 @@ section.section-2 .text p {
 /* section 3 */
 
 
-section.section-3 {
+.section-3 {
     background: var(--c2);
-    max-width: 86%;
+    grid-template-rows: repeat(10, 1fr);
+    width: clamp(300px,86%,95vw);
+    height: 800px;
     min-height: 110vh;
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     margin: 0 auto 40px;
-    display: grid;
-    grid-template-rows: repeat(4, minmax(auto, 144px));
-    grid-gap: 20px;
-
-
 }
 
 /* header */
-section.section-3 .header {
+.section-3 .header {
+    grid-row: 1/2;
+    grid-column: 1/9;
     color: var(--c5);
     font-size: 27px;
     font-family: roboto;
@@ -189,29 +137,37 @@ section.section-3 .header {
 }
 
 
-section.section-3 .service {
+/* service  */
+.section-3 .service {
     width: 297px;
     max-height: 144px;
     place-self: center;
+    grid-row: span 2;
+    grid-column: 1/9;
+    display: flex;
+    flex-direction: column;
 }
 
-section.section-3 .service p {
+
+.section-3 .service p {
     font-family: mada;
     font-weight: 600;
     color: var(--c6);
     font-size: 14px;
     line-height: 18px;
     /* letter-spacing: .7px; */
-    margin-top: 25px;
+    margin: 25px auto 0;
+    width: clamp( 250px, 285px, 320px);
 }
 
-section.section-3 .service p span {
+.section-3 .service p span {
     color: var(--c4);
 }
 
-section.section-3 .service-name {
+.section-3 .service-name {
     background: transparent;
-    width: 295px;
+    /* width: 295px; */
+    width: clamp( 250px, 285px, 320px);
     height: 48px;
     border: 1px solid var(--c3);
     font-family: mada;
@@ -224,57 +180,61 @@ section.section-3 .service-name {
 /* section 3 END */
 
 /* section 4 */
-section.section-4 {
-    display: block;
-    height: auto;
+.section-4 {
+    grid-template-rows: repeat(10,1fr);
     margin: 130px auto 0;
-    width: 322px;
+    width: clamp( 320px, 360px, 91vw);
+    height:902px;
+
+    /* height: clamp( 1052px ,1000px,599px); */
     /* background: url(/images/Path704.png); */
     /* background-size: 100%; */
 }
 
 .section-4 h1.header {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    place-self: center;
     font-family: roboto;
     font-size: 27px;
     /* letter-spacing: 2.7px; */
     line-height: 33px;
-    margin: 0 auto 70px;
+    margin: 0 auto 0;
     max-width: 286px;
     text-align: center;
     font-weight: 700;
     color: var(--c5);
 }
 
-.section-4 .steps {
-    grid-row-gap: 60px;
-    margin-bottom: 100px;
-}
-
-.section-4 .steps div {
-    grid-column: 1/9;
+.section-4 .step-parent {
+    grid-column:1/9 ;
+    grid-row: 3/11;
+    height: 100%;
+    width: 278px;
+    /* width: clamp(216px,228px,276px); */
     place-self: center;
-    /* height: 100%;
-    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 95px;
 }
 
-
-.section-4 .steps img {
+.section-4 .step img {
     height: 126px;
     width: 126px;
     display: flex;
     margin: 0 auto 25px;
 }
 
-.section-4 .steps .green {
+.section-4 .step .green {
     color: var(--c7);
 }
 
-.section-4 .steps p {
+.section-4 .step p {
     color: var(--c6);
     font-family: mada;
     text-align: center;
 }
-
 /* SECTION-4 END */
 
 /* section-5 */
@@ -282,8 +242,9 @@ section.section-4 {
     width: 100%;
     background-color: var(--c2);
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
-    height: 167px;
+    height: clamp(167px, 200px, 400px);
     display: flex;
+    margin-top: 30px;
 }
 
 .section-5 .text {
@@ -314,7 +275,7 @@ section.section-4 {
 
 /* section-6 */
 .section-6 {
-    width: 90%;
+    width: 100%;
     display: flex;
     place-content: center;
     height: 160px;
@@ -322,6 +283,7 @@ section.section-4 {
 }
 
 .section-6 h1 {
+    width: 90%;
     margin: auto 0;
     /* width: 256px; */
     font-size: 27px;
@@ -348,36 +310,86 @@ section.section-4 {
 
 
 
-/* @media screen and (min-width:370px) {
-    section{
-
-    }
-} */
-/* END of base styling */
-
-
-
-
-
-
 /* larger screens */
 @media screen and (min-width:370px) {
-    body {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width:370px) {
-    body {
-        font-size: 18px;
+    .section-1 .main-image {
+        width:300px ;
     }
 }
 
 /* small tablets styles */
 @media screen and (min-width:620px) {
-    #desktop {
-        display: ;
-    }
+   
+.section-1 {
+    grid-template-rows: repeat(10, 1fr);
+    box-shadow: 0 0 30px 1px rgba(139, 26, 26, 0.15);
+    width:95vw;
+    height: 80vh;
+}
+
+.section-1 .main-image {
+    grid-row: 3/9;
+    grid-column: 1/4;
+    width:478px ;
+    margin-top:12px ;
+    margin-left: 60px;
+}
+
+.section-1 header{
+    grid-row: 4/7;
+    grid-column: 5/9;
+    /* margin-top: 25px; */
+}
+
+.section-1 header h1 {
+    font-size: 35px;
+    width: 550px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.section-1 header h1 span{
+    font-size: 37px;
+}
+
+/* Home text */
+
+.section-1 header p {
+    font-size: 20px;
+    width: 506px;
+    margin: 15px auto 0;
+}
+
+/* button */
+.section-1 button.get-started {
+    grid-column: 5/9;
+    grid-row: 8;
+}
+
+/* section 2 */
+.section-2 {
+    margin: 200px auto;
+    width: 800px;
+    /* place-items: left; */
+}
+
+
+.section-2 .text h1 {
+    font-size:47px;
+    font-weight: 700;
+    /* text-align:left; */
+}
+
+.section-2 .text p {
+    font-family: mada;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--c6);
+    text-align: center;
+    width: 80%;
+    margin: 5px auto 0;
+}
+
 }
 
 /* large tablets and laptop styles */

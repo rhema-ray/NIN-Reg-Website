@@ -1,24 +1,29 @@
 
-nav.nav-bar {
-    display: flex;
-    width: 100%;
-    padding: 9% 5% 0;
-    /* height: 34px; */
-    justify-content: space-between;
-    align-content: center;
-}
-
 .nav-bar #home {
     height: 34px;
 }
 
-/* hidden in mobile view */
-.nav-menu {
-    display: none;
+
+nav.nav-bar {
+    display: flex;
+    width: 100%;
+    padding: 5% 2% 0;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 30px;
 }
 
-#signin {
-    display: none;
+/* till tablet */
+@media screen and (max-width:1024px) {
+    
+    /* hidden in mobile view */
+    .nav-menu {
+        display: none;
+    }
+    
+    #signin {
+        display: none;
+    }
 }
 
 /* END hidden */
@@ -98,22 +103,102 @@ nav .account .txt{
 }
 
 /* larger screens */
-@media screen and (min-width:370px) {
-    body {
-        font-size: 18px;
+/* @media screen and (min-width:370px) {
+    nav.nav-bar {
+        padding: 4% 2% 0;
+        margin-bottom: 55px;
     }
-}
+    
+    nav.nav-bar {
+        padding: 9% 7% 0;
+    }
+    
+} */
 
-@media screen and (min-width:370px) {
-    body {
-        font-size: 18px;
+@media screen and (min-width:1024px) {
+    
+    /* laptop nav bar */
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self:center ;
+        width: 345px;
+        height: 22px;
+        margin-left: 90px;
+    }
+    
+    .nav-menu li a, .dropbtn {
+        color: var(--c6);
+        text-align: center;
+        font-family: mada;
+        font-size: 16px;
+        text-transform: capitalize;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+    }
+    
+    .nav-menu li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    
+    .nav-menu li{
+        height: 19px;
+    }
+
+    .nav-menu li .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-menu li .dropdown a{
+        text-align: left;
+        padding: 1rem .7rem;
+    }
+    
+    
+    .nav-menu li .dropdown{
+        margin-top: 10px;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    
+    .nav-menu .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .nav-menu .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+    
+    nav .right-nav #signin{
+        font-size: 20px;
+        font-family: mada;
+        color: var(--c6);
+        height: 25px;
+        place-self: center;
+
+    }
+
+    .right-nav {
+        display: flex;
+        width: 164px;
+        justify-content: space-between;
+    }
+
+    .menu-btn{
+        display: none;
     }
 }
 
 /* small tablets styles */
 @media screen and (min-width:620px) {
-    #desktop {
-        display: inherit;
+    nav.nav-bar {
+        padding: 3% 7% 0;
     }
 }
 
