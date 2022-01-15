@@ -70,6 +70,7 @@ input.text-field {
     font-size: 18px;
     font-weight: 500;
     font-family: mada;
+    background: none;
     border: 0;
     border-bottom: 1px solid var(--c3);
     padding-left: 40px;
@@ -92,7 +93,6 @@ input.text-field {
 
 input.text-field:focus {
     color: var(--c4);
-    ;
     box-shadow: -4px -3px 0px 0px #ffffff, 0px -4px 0px 0px #ffffff, -5px 5px 12px 0px rgb(255 255 255 / 53%), 13px 1px 12px 0px #ffffff, 5px 7px 11px 0px rgb(0 0 0 / 7%);
     border-bottom: 1px solid var(--c6);
 }
@@ -161,4 +161,20 @@ form input[type=submit]
     padding-bottom: 3px;
     border-bottom: 1.15px solid #18C17D;
     box-shadow: -4px -3px 0px 0px #ffffff, 0px -4px 0px 0px #ffffff, -5px 5px 12px 0px rgb(255 255 255 / 53%), 13px 1px 12px 0px #ffffff, 5px 7px 11px 0px rgb(0 0 0 / 7%);
+}
+
+
+@media screen and (min-width:620px) {
+
+    
+.main .header {
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+    form .box {
+        width: 30%;
+        outline: none;
+        place-self: center;
+    }
 }

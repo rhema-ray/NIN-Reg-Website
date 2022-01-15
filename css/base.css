@@ -19,6 +19,7 @@
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: all .2s ease-out;
 }
 
 body {
